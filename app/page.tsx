@@ -1,113 +1,211 @@
+'use client'
+
 import Image from "next/image";
+import { main } from "nuxi";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <main className="{$myFont} h-full font-['Open Sans']">
+      <div className="fixed bg-white w-full uppercase text-[#428777] z-10 px-5 md:px-8 border-b-[1px] top-0 flex flex-row items-center justify-between h-[60px]">
+        <div>
+          <a href="/">
+            {/* <Image src="/logo_white.svg" width={140} height={30} alt="REAN KHMER" /> */}
+
+            <Image src="/left_title.svg" width={150} height={0} alt="REAN KHMER" />
           </a>
+        </div>
+        <div className="hidden md:flex text-[#428777] flex-row text-[1px] items-center gap-10">
+
+          <Image src="/right_title.svg" width={315} height={0} alt="REAN KHMER" />
+          {/* <Image src="/title_blurb.svg" width={300} height={500} alt="INTERACTIVE SHORT STORIES IN KHMER" /> */}
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="flex justify-between h-screen w-full lg:w-[calc(100%-300px)]">
+
+        <div className="top-[60px] fixed w-[300px] pl-11 p-8 h-full text-[#2c3e50] text-[14px] bottom-0 border-r-[1px] ">
+          <div className="relative">
+            <div className="-left-3 absolute">
+              Intro
+            </div>
+          </div>
+          <br />
+          Consonants <br />
+          Vowels <br />
+          Special Characters <br /><br />
+
+          <div className="relative">
+            <div className="-left-3 absolute">
+              Beginner
+            </div>
+          </div>
+          <br />
+          Words and Vocabulary <br />
+          Conversational Phrases <br /><br />
+          Intermediate
+          <br />
+          Words and Vocabulary <br />
+          Conversational Phrases <br /><br />
+          Advance
+          <br />
+          Words and Vocabulary <br />
+          Conversational Phrases <br /><br />
+        </div>
+        <div className="w-full pl-[300px] h-full top-[60px]">
+          <div className="mt-[60px] h-full w-full p-8">
+            <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
+              <span className="text-xs italic">
+                Intermediate
+              </span>
+              <div className="text-[1.6rem] font-semibold mb-5">
+                Conversational Phrases
+              </div>
+              <div>
+                These phrases cover various aspects of daily life and activities, from studying to working, and leisure activities. Practice using them in context to improve your Khmer language skills!
+              </div>
+
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Daily Life and Activities
+              </div>
+              <div className="relative mb-7">
+                <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  I usually wake up early in the morning to start my day.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  After breakfast, I commute to work using public transportation.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  During my lunch break, I like to relax and chat with my colleagues.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  In the evening, I enjoy cooking dinner and watching TV with my family.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  Before bed, I like to read a book or listen to music to unwind.
+                </div>
+              </div>
+
+
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Travel and Tourism
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  I usually wake up early in the morning to start my day.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  After breakfast, I commute to work using public transportation.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  During my lunch break, I like to relax and chat with my colleagues.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  In the evening, I enjoy cooking dinner and watching TV with my family.
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  Before bed, I like to read a book or listen to music to unwind.
+                </div>
+              </div>
+
+
+              <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
+                On this page <br /><br />
+                Daily Life and Activities <br />
+                Travel and Tourism <br />
+                Socializing and Relationships <br />
+                Shopping and Dining Out <br />
+                Education and Learning <br />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
   );
 }
