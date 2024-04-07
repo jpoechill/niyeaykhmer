@@ -31,57 +31,57 @@ export default function Home() {
 
       <div className="flex justify-between h-screen w-full lg:w-[calc(100%-300px)]">
 
-        <div className="top-[60px] fixed w-[300px] pl-11 p-8 h-full text-[#2c3e50] text-[14px] bottom-0 border-r-[1px] ">
+        <div className="top-[60px] fixed w-[300px] pl-9 p-8 h-full text-[#2c3e50] text-[14px] bottom-0 border-r-[1px] ">
 
 
 
           <div className="relative">
-            <div className="-left-3 font-semibold absolute">
+            <div className="-left-3 font-semibold mb-1">
               Basics
             </div>
           </div>
-          <br />
-          Vowels <br />
-          Consonants <br />
-          Special Characters <br />
-          Numerals<br /><br />
-
+          <div className="pl-4 flex flex-col gap-1">
+            <div className="hover:text-[#428777] cursor-pointer">Vowels</div>
+            <div className="hover:text-[#428777] cursor-pointer">Consonants</div>
+            <div className="hover:text-[#428777] cursor-pointer">Special Characters</div>
+            <div className="hover:text-[#428777] cursor-pointer">Numerals</div>
+          </div>
           <div className="relative">
-            <div className="-left-3 font-semibold absolute">
+            <div className="-left-3 font-semibold mt-2 mb-1">
               Beginner
             </div>
           </div>
-          <br />
-          Words and Vocabulary <br />
-          Conversational Phrases <br /><br />
-
+          <div className="pl-4 flex flex-col gap-1">
+            <div className="hover:text-[#428777] cursor-pointer">Words and Vocabulary</div>
+            <div className="hover:text-[#428777] cursor-pointer">Conversational Phrases</div>
+          </div>
           <div className="relative">
-            <div className="-left-3 font-semibold absolute">
+            <div className="-left-3 font-semibold mt-2 mb-1">
               Intermediate
             </div>
           </div>
-          <br />
-          Words and Vocabulary <br />
-          Conversational Phrases <br /><br />
+          <div className="pl-4 flex flex-col gap-1">
+            <div className="hover:text-[#428777] cursor-pointer">Words and Vocabulary</div>
+            <div className="hover:text-[#428777] cursor-pointer">Conversational Phrases</div>
+          </div>
           <div className="relative">
-            <div className="-left-3 font-semibold absolute">
+            <div className="-left-3 font-semibold mt-2 mb-1">
               Advance
             </div>
           </div>
-          <br />
-          Words and Vocabulary <br />
-          Conversational Phrases <br /><br />
-
-          <div className="relative">
-            <div className="-left-3 font-semibold absolute">
-              Etc.
-            </div>
+          <div className="pl-4 flex flex-col gap-1">
+            <div className="hover:text-[#428777] cursor-pointer">Words and Vocabulary</div>
+            <div className="hover:text-[#428777] cursor-pointer">Conversational Phrases</div>
           </div>
-          <br />
-          About<br />
-          Membership<br />
-          Resources <br />
-          Contact<br /><br />
+          <div className="font-semibold text-[14px] mt-4">
+            Etc.
+          </div>
+          <div className="pl-4 flex flex-col gap-1">
+            <div className="hover:text-[#428777] cursor-pointer">About</div>
+            <div className="hover:text-[#428777] cursor-pointer">Membership</div>
+            <div className="hover:text-[#428777] cursor-pointer">Resources</div>
+            <div className="hover:text-[#428777] cursor-pointer">Contact</div>
+          </div>
         </div>
         <div className="w-full pl-[300px] h-full top-[60px]">
           <div className="mt-[60px] h-full w-full p-8">
@@ -233,10 +233,10 @@ export default function Home() {
 
 
               <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
-                <div className="font-semibold mb-4">
+                <div className="font-semibold mb-1">
                   On this page
                 </div>
-                <div className="pl-3 flex flex-col gap-3">
+                <div className="pl-3 flex flex-col gap-1">
                   <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
                   <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
                   <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
