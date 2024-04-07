@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import { main } from "nuxi";
 
 export default function Home() {
   return (
