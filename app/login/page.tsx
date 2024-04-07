@@ -6,7 +6,7 @@ export default function LoginPage() {
         <main className="{$myFont} h-full font-['Open Sans'] bg-[#fafafa]">
             <div className='w-full h-full flex justify-center items-center'>
                 <form>
-                    <div className='border bg-white w-[400px] shadow-md p-5 rounded-xl'>
+                    <div className='border bg-white w-[400px] shadow-md p-5 rounded-md'>
                         <div className='w-full flex justify-center p-5 mb-5'>
                             <a href="/">
                                 <Image src="/left_title.svg" width={150} height={0} alt="REAN KHMER" />

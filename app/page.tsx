@@ -1,40 +1,54 @@
-'use client'
-
 import Image from "next/image";
+import { createClient } from '@/utils/supabase/server'
+import GetCreds from "./getcreds/getCreds"
 
-export default function Home() {
+export default async function Account() {
+  const supabase = createClient()
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+
+  async function logout() {
+    if (user) {
+      await supabase.auth.signOut()
+    }
+  }
+
   return (
     <main className="h-full">
-      <div className="fixed bg-white w-full text-[#428777] z-10 px-5 md:px-8 border-b-[1px] top-0 flex flex-row items-center justify-between h-[60px]">
-        <div className="flex uppercase font-semibold items-center pt-1 text-md text-[14px]">
-          <a href="/">
-            <Image src="/logo_green.svg" width={24} height={100} alt="REAN KHMER" className="inline mr-3 pb-1" />
-            niyeay khmer
-          </a>
-        </div>
-        <div className="hidden md:flex text-[#428777] flex-row text-[14px] items-center gap-10">
-          <div>
-            <div className="text-md inline">
-              <a href="">Contact</a>
-            </div>
-            <a href="/login">
-              <button className="border-[1px] border-[#bdcac7] rounded-md p-2 py-1 mx-3">Login</button>
-            </a>
-            <a href="/login">
-              <button className="text-white bg-[#428777] rounded-md p-2 py-1">Sign Up</button>
-            </a>
-          </div>
-          {/* <Image src="/right_title.svg" width={315} height={0} alt="REAN KHMER" /> */}
-          {/* <Image src="/title_blurb.svg" width={300} height={500} alt="INTERACTIVE SHORT STORIES IN KHMER" /> */}
-        </div>
-      </div>
-
       <div className="flex justify-between h-screen w-full lg:w-[calc(100%-300px)]">
-
-        <div className="top-[60px] fixed w-[300px] pl-9 p-8 h-full text-[#2c3e50] text-[14px] bottom-0 border-r-[1px] ">
-
-
-
+        <main className="h-full">
+          <div className="fixed bg-white w-full text-[#428777] z-10 px-5 md:px-8 border-b-[1px] top-0 flex flex-row items-center justify-between h-[60px]">
+            <div className="flex uppercase font-semibold items-center pt-1 text-md text-[14px]">
+              <a href="/">
+                <Image src="/logo_green.svg" width={24} height={100} alt="REAN KHMER" className="inline mr-3 pb-1" />
+                niyeay khmer
+              </a>
+            </div>
+            <div className="hidden md:flex text-[#428777] flex-row text-[14px] items-center gap-10">
+              <div>
+                {user ?
+                  <div>
+                    <GetCreds />
+                    <form action="/auth/signout" className="inline" method="post">
+                      <button className="text-white inline bg-[#428777] rounded-md ml-3 p-2 py-1">Log Out</button>
+                    </form>
+                  </div> :
+                  <div>
+                    <a href="/login">
+                      <button className="border-[1px] border-[#bdcac7] rounded-md p-2 py-1 mx-3">Login</button>
+                    </a>
+                    <a href="/">
+                      <button className="text-white bg-[#428777] rounded-md p-2 py-1">Sign Up</button>
+                    </a>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </main>
+        <div className="top-[60px] fixed w-[300px] pl-9 pt-5 p-8 h-full text-[#2c3e50] text-[14px] bottom-0 border-r-[1px] ">
           <div className="relative">
             <div className="-left-3 font-semibold mb-1">
               Basics
@@ -83,6 +97,7 @@ export default function Home() {
             <div className="hover:text-[#428777] cursor-pointer">Contact</div>
           </div>
         </div>
+
         <div className="w-full pl-[300px] h-full top-[60px]">
           <div className="mt-[60px] h-full w-full p-8">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
@@ -100,7 +115,7 @@ export default function Home() {
                 Daily Life and Activities
               </div>
               <div className="relative mb-7">
-                <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div>
+                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
@@ -232,7 +247,7 @@ export default function Home() {
 
 
 
-              <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
+              <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed pt-5 p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
                 <div className="font-semibold mb-1">
                   On this page
                 </div>
@@ -262,9 +277,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
 
 
-    </main>
+    </main >
   );
 }

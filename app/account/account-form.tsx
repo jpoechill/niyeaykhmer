@@ -33,7 +33,7 @@ export default function AccountForm({ user }: { user: User | null }) {
                 setAvatarUrl(data.avatar_url)
             }
         } catch (error) {
-            alert('Error loading user data!')
+            // alert('Error loading user data!')
         } finally {
             setLoading(false)
         }
@@ -74,55 +74,57 @@ export default function AccountForm({ user }: { user: User | null }) {
     }
 
     return (
-        <div className="form-widget">
-            <div>
-                <label htmlFor="email">Email</label>
-                <input id="email" type="text" value={user?.email} disabled />
-            </div>
-            <div>
-                <label htmlFor="fullName">Full Name</label>
-                <input
-                    id="fullName"
-                    type="text"
-                    value={fullname || ''}
-                    onChange={(e) => setFullname(e.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="username">Username</label>
-                <input
-                    id="username"
-                    type="text"
-                    value={username || ''}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="website">Website</label>
-                <input
-                    id="website"
-                    type="url"
-                    value={website || ''}
-                    onChange={(e) => setWebsite(e.target.value)}
-                />
-            </div>
+        <div className='flex w-full h-full justify-center items-center'>
+            <div className="form-widget">
+                <div>
+                    <label htmlFor="email">Email</label>
+                    <input id="email" type="text" value={user?.email} disabled />
+                </div>
+                <div>
+                    <label htmlFor="fullName">Full Name</label>
+                    <input
+                        id="fullName"
+                        type="text"
+                        value={fullname || ''}
+                        onChange={(e) => setFullname(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        id="username"
+                        type="text"
+                        value={username || ''}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="website">Website</label>
+                    <input
+                        id="website"
+                        type="url"
+                        value={website || ''}
+                        onChange={(e) => setWebsite(e.target.value)}
+                    />
+                </div>
 
-            <div>
-                <button
-                    className="button primary block"
-                    onClick={() => updateProfile({ fullname, username, website, avatar_url })}
-                    disabled={loading}
-                >
-                    {loading ? 'Loading ...' : 'Update'}
-                </button>
-            </div>
-
-            <div>
-                <form action="/auth/signout" method="post">
-                    <button className="button block" type="submit">
-                        Sign out
+                <div>
+                    <button
+                        className="button primary block"
+                        onClick={() => updateProfile({ fullname, username, website, avatar_url })}
+                        disabled={loading}
+                    >
+                        {loading ? 'Loading ...' : 'Update'}
                     </button>
-                </form>
+                </div>
+
+                <div>
+                    <form action="/auth/signout" method="post">
+                        <button className="button block" type="submit">
+                            Sign out
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     )
