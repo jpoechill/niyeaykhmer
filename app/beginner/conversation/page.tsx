@@ -39,121 +39,250 @@ export default async function Account() {
 
 
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Daily Life and Activities
+                Greetings and Introductions
               </div>
               <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
+                    សួរស្តាប់, អ្នកបានប្រចាំទេ?
                   </span><br />
                 </div>
                 <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
+                  Hello, how are you?
                 </div>
               </div>
-
               <div className="relative mb-7">
                 <div className="absolute -left-6 pt-3">&gt;</div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                    ឈ្មោះខ្ញុំគឺ ::
                   </span><br />
                 </div>
                 <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
+                  My name is :: .
                 </div>
               </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ស្ដាប់ដំណើរមួយទៀត!
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Nice to meet you!
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    អារម្មណ៍​បន្ទាប់​មក​ / ល្ងាច / អរិយុរ។
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Good morning/afternoon/evening.
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    លាហើយ, នឹងបង្ហាញថ្ងៃក្រោយមក!
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Goodbye, see you later!
+                </div>
+              </div>
+
+
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Travel and Tourism
+                Everyday Conversations
               </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
-                </div>
-              </div>
-
               <div className="relative mb-7">
                 <div className="absolute -left-6 pt-3">&gt;</div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                    ទទួលមកពីយប់មួយរបស់អ្នកមានដូចម្តេច?
                   </span><br />
                 </div>
                 <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
+                  How is your day going?
                 </div>
               </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    អ្នកធ្វើការនៅដំណើរឬក៏កិច្ចការយ៉ាងណា?
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  What do you do for work/study?
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ខ្ញុំនិយមនៅពីប្រទេស ::
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  I am from :: .
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    សូមអញ្ជើញ, តើអ្នកអាចជួយខ្ញុំបានឬ?
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Excuse me, can you help me?
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    អរគុណច្រើនមែន!
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Thank you very much!
+                </div>
+              </div>
+
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Socializing and Relationships
+                At the Restaurant
               </div>
               <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
+                    ខ្ញុំចង់បាន :: ទេ។
                   </span><br />
                 </div>
                 <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
+                  I would like to order :: .
                 </div>
               </div>
-
               <div className="relative mb-7">
                 <div className="absolute -left-6 pt-3">&gt;</div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                    តើអ្នកណាក៏ណាជាការណែនាំរបស់អ្នកទេ?
                   </span><br />
                 </div>
                 <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
+                  What do you recommend?
                 </div>
               </div>
+              <div className="relative mb-7">
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ខ្ញុំអាចទទួលបានវិក័យប័ត្រទេចេញបានទេ?
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  Can I have the bill, please?
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    ម្ហូបមួយនេះមានរស់រវត្សិរចិត្ត!
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  The food is delicious!
+                </div>
+              </div>
+
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Shopping and Dining Out
+                Shopping
+              </div>
+              <div className="relative mb-7">
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    តើនេះត្រូវកំណត់ចំណាយប៉ុន្មានទេ?
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  How much does this cost?
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    តើអ្នកមានមាត្រដាក់/ពណ៌ផ្សេងទៀតឬទេ?
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Do you have this in a different size/color?
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    តើនេះត្រូវកំណត់ចំណាយប៉ុន្មានទេ?
+                  </span><br />
+                </div>
+                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                  How much does this cost?
+                </div>
+              </div>
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    តើអ្នកមានមាត្រដាក់/ពណ៌ផ្សេងទៀតឬទេ?
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Do you have this in a different size/color?
+                </div>
               </div>
               <div className="relative mb-7">
                 {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
+                    ខ្ញុំចង់ទិញ :: ទេ។
                   </span><br />
                 </div>
                 <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
+                  I would like to buy :: .
                 </div>
               </div>
-
               <div className="relative mb-7">
                 <div className="absolute -left-6 pt-3">&gt;</div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                    តើអ្នកអាចបញ្ចុះតម្លៃខ្ពស់មកខ្ញុំបានទេ?
                   </span><br />
                 </div>
                 <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
+                  Could you give me a discount?
                 </div>
               </div>
+
+
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Education and Learning
+                Directions and Transportation
               </div>
               <div className="relative mb-7">
                 {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
+                    សូមអញ្ជើញ, កន្លែងស្ដាប់ប្រទេស/ស្ថានីយ៍រងចាំប៊ិចទេមួយត្រឹមប៉ុន្មានឬ?
                   </span><br />
                 </div>
                 <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
+                  Excuse me, where is the nearest bus stop/train station?
                 </div>
               </div>
 
@@ -161,11 +290,23 @@ export default async function Account() {
                 <div className="absolute -left-6 pt-3">&gt;</div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
+                    តើតម្លៃប្រាក់ទៅ :: ប៉ុន្មានទេ?
                   </span><br />
                 </div>
                 <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
+                  How much is the fare to :: ?
+                </div>
+              </div>
+
+              <div className="relative mb-7">
+                <div className="absolute -left-6 pt-3">&gt;</div>
+                <div>
+                  <span className="text-[26px] cursor-pointer">
+                    តើនេះជាទ្វីងទៅ :: ឬទេ?
+                  </span><br />
+                </div>
+                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                  Is this the right way to :: ?
                 </div>
               </div>
 
@@ -177,11 +318,11 @@ export default async function Account() {
                   On this page
                 </div>
                 <div className="pl-3 flex flex-col gap-1">
-                  <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Shopping and Dining Out</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Education and Learning</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Greetings and Introductions</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Everyday Conversations</div>
+                  <div className="hover:text-[#428777] cursor-pointer">At the Restaurant</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Shopping</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Directions and Transportation</div>
                 </div>
               </div>
 

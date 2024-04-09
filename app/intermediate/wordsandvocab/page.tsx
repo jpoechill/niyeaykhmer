@@ -25,7 +25,7 @@ export default async function Account() {
         <LeftSideBar></LeftSideBar>
 
         <div className="w-full pl-[300px] h-full top-[60px]">
-          <div className="mt-[60px] h-full w-full p-8">
+          <div className="mt-[60px] h-full w-full p-8 pt-5">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
               <span className="text-xs italic">
                 Intermediate

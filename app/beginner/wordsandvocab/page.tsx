@@ -39,19 +39,31 @@ export default async function Account() {
 
 
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Daily Life and Activities
+                Greetings
               </div>
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Travel and Tourism
+                Polite Expressions
               </div>
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Socializing and Relationships
+                Basic Requests and Commands
               </div>
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Shopping and Dining Out
+                Negation
               </div>
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Education and Learning
+                Directions and Movement
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Apologies
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Countries and Nationalities
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Emergency
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Miscellaneous
               </div>
 
 
@@ -62,11 +74,16 @@ export default async function Account() {
                   On this page
                 </div>
                 <div className="pl-3 flex flex-col gap-1">
-                  <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Shopping and Dining Out</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Education and Learning</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Greetings</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Polite Expressions</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Basic Requests and Commands</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Negation</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Affirmation</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Directions and Movement</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Apologies</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Countries and Nationalities</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Emergency</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Miscellaneous</div>
                 </div>
               </div>
 

@@ -20,12 +20,16 @@ export default async function Account() {
     <main className="h-full scroll-smooth">
       <div className="flex justify-between h-screen w-full lg:w-[calc(100%-300px)]">
 
-
         <GetCreds />
 
         <LeftSideBar></LeftSideBar>
 
+
         <div className="w-full pl-[300px] h-full top-[60px]">
+
+          {/* <div className="h-[200px] overflow-hidden block">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sequi veniam delectus eius sunt eum quod corrupti libero ad odit accusamus nam consectetur rem consequatur reprehenderit molestiae dolorem, ducimus non adipisci necessitatibus perspiciatis minus quasi. Adipisci perferendis repellendus itaque atque officia error quas, quam expedita laboriosam officiis, consectetur soluta inventore nam obcaecati explicabo dolore vitae doloribus cum, facere aliquam delectus? Quis repudiandae odio provident adipisci pariatur dolorum, vitae ab animi voluptatem repellendus quia rem id voluptatum ut perferendis maiores, aliquam perspiciatis quos voluptatibus, inventore tempora! Ut a quia praesentium in, veniam voluptates officia quae vel ex pariatur explicabo accusamus ipsam!</div> */}
+
           <div className="mt-[60px] h-full w-full p-8">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
               <span className="text-xs italic">
