@@ -3,6 +3,8 @@ import { createClient } from '@/utils/supabase/server'
 import GetCreds from "@/app/getcreds/getCreds"
 import LeftSideBar from "@/app/components/LeftSideBar";
 
+import sections from './data.json'
+
 export default async function Account() {
   const supabase = createClient()
 
@@ -34,9 +36,38 @@ export default async function Account() {
                 Conversation and Phrases
               </div>
               <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut laudantium ullam eius, provident nostrum earum obcaecati minus saepe quis commodi ipsum eos eveniet odio, quisquam rerum sed aliquid ipsam dolorum non, voluptatem incidunt vel sint autem. Fugiat aperiam possimus sequi?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </div>
 
+
+
+              {
+                sections.map((item, index) => (
+                  <div key="index" >
+                    <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                      {item.title}
+                    </div>
+
+
+                    {
+                      // item.title
+                      item.phrases.map((phrase, phraseIndex) => (
+                        <div key="phraseIndex" className="w-full flex justify-center">
+                          <div className="relative w-min">
+                            <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
+                              <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                            </div>
+                            {/* <span className="cursor-pointer">{item.khmer}</span> */}
+                          </div>
+                        </div>
+                      ))
+                    }
+
+
+                  </div>
+
+                ))
+              }
 
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                 Daily Life and Activities

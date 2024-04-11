@@ -3,6 +3,8 @@ import { createClient } from '@/utils/supabase/server'
 import GetCreds from "@/app/getcreds/getCreds"
 import LeftSideBar from "@/app/components/LeftSideBar";
 
+import sections from './data.json'
+
 export default async function Account() {
   const supabase = createClient()
 
@@ -30,286 +32,37 @@ export default async function Account() {
               <span className="text-xs italic">
                 Beginner
               </span>
+
               <div className="text-[1.6rem] font-semibold mb-5">
                 Conversation and Phrases
               </div>
               <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut laudantium ullam eius, provident nostrum earum obcaecati minus saepe quis commodi ipsum eos eveniet odio, quisquam rerum sed aliquid ipsam dolorum non, voluptatem incidunt vel sint autem. Fugiat aperiam possimus sequi?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </div>
 
 
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Greetings and Introductions
-              </div>
-              <div className="relative mb-7">
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    សួរស្តាប់, អ្នកបានប្រចាំទេ?
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  Hello, how are you?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ឈ្មោះខ្ញុំគឺ ::
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  My name is :: .
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ស្ដាប់ដំណើរមួយទៀត!
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Nice to meet you!
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    អារម្មណ៍​បន្ទាប់​មក​ / ល្ងាច / អរិយុរ។
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Good morning/afternoon/evening.
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    លាហើយ, នឹងបង្ហាញថ្ងៃក្រោយមក!
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Goodbye, see you later!
-                </div>
-              </div>
+              {
+                sections.map((item, index) => (
+                  <div key="index" >
+                    <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                      {item.title}
+                    </div>
 
+                    <div className="mt-5 grid grid-cols-1 text-[30px] text-left gap-y-5">
+                      {/* <div className="w-full flex-col flex-wrap justify-center"> */}
+                      {item.phrases.map((phrase, phraseIndex) => (
+                        <div key="phraseIndex" className="relative">
+                          <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
+                            <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                          </div>
+                          <span className="cursor-pointer">{phrase.khmer}</span>
+                        </div>
+                      ))}
+                    </div>
 
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Everyday Conversations
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ទទួលមកពីយប់មួយរបស់អ្នកមានដូចម្តេច?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  How is your day going?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    អ្នកធ្វើការនៅដំណើរឬក៏កិច្ចការយ៉ាងណា?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  What do you do for work/study?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ខ្ញុំនិយមនៅពីប្រទេស ::
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  I am from :: .
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    សូមអញ្ជើញ, តើអ្នកអាចជួយខ្ញុំបានឬ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Excuse me, can you help me?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    អរគុណច្រើនមែន!
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Thank you very much!
-                </div>
-              </div>
-
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                At the Restaurant
-              </div>
-              <div className="relative mb-7">
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ខ្ញុំចង់បាន :: ទេ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I would like to order :: .
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើអ្នកណាក៏ណាជាការណែនាំរបស់អ្នកទេ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  What do you recommend?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ខ្ញុំអាចទទួលបានវិក័យប័ត្រទេចេញបានទេ?
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  Can I have the bill, please?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ម្ហូបមួយនេះមានរស់រវត្សិរចិត្ត!
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  The food is delicious!
-                </div>
-              </div>
-
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Shopping
-              </div>
-              <div className="relative mb-7">
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើនេះត្រូវកំណត់ចំណាយប៉ុន្មានទេ?
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  How much does this cost?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើអ្នកមានមាត្រដាក់/ពណ៌ផ្សេងទៀតឬទេ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Do you have this in a different size/color?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើនេះត្រូវកំណត់ចំណាយប៉ុន្មានទេ?
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  How much does this cost?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើអ្នកមានមាត្រដាក់/ពណ៌ផ្សេងទៀតឬទេ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Do you have this in a different size/color?
-                </div>
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ខ្ញុំចង់ទិញ :: ទេ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I would like to buy :: .
-                </div>
-              </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើអ្នកអាចបញ្ចុះតម្លៃខ្ពស់មកខ្ញុំបានទេ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Could you give me a discount?
-                </div>
-              </div>
-
-
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Directions and Transportation
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    សូមអញ្ជើញ, កន្លែងស្ដាប់ប្រទេស/ស្ថានីយ៍រងចាំប៊ិចទេមួយត្រឹមប៉ុន្មានឬ?
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  Excuse me, where is the nearest bus stop/train station?
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើតម្លៃប្រាក់ទៅ :: ប៉ុន្មានទេ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  How much is the fare to :: ?
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    តើនេះជាទ្វីងទៅ :: ឬទេ?
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  Is this the right way to :: ?
-                </div>
-              </div>
-
+                  </div>
+                ))
+              }
 
               {/* Start Side Bar - RIGHT */}
 
@@ -325,7 +78,6 @@ export default async function Account() {
                   <div className="hover:text-[#428777] cursor-pointer">Directions and Transportation</div>
                 </div>
               </div>
-
 
               <div className="text-xs font-extralight text-right block pt-12 pb-3">
                 Last updated: 01/01/24

@@ -3,6 +3,8 @@ import { createClient } from '@/utils/supabase/server'
 import GetCreds from "../getcreds/getCreds"
 import LeftSideBar from "../components/LeftSideBar";
 
+import characters from './data.json'
+
 export default async function Account() {
   const supabase = createClient()
 
@@ -31,131 +33,106 @@ export default async function Account() {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sequi veniam delectus eius sunt eum quod corrupti libero ad odit accusamus nam consectetur rem consequatur reprehenderit molestiae dolorem, ducimus non adipisci necessitatibus perspiciatis minus quasi. Adipisci perferendis repellendus itaque atque officia error quas, quam expedita laboriosam officiis, consectetur soluta inventore nam obcaecati explicabo dolore vitae doloribus cum, facere aliquam delectus? Quis repudiandae odio provident adipisci pariatur dolorum, vitae ab animi voluptatem repellendus quia rem id voluptatum ut perferendis maiores, aliquam perspiciatis quos voluptatibus, inventore tempora! Ut a quia praesentium in, veniam voluptates officia quae vel ex pariatur explicabo accusamus ipsam!</div> */}
 
           <div className="mt-[60px] h-full w-full p-8">
-            <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
-              <span className="text-xs italic">
-                Khmer
-              </span>
-              <div className="text-[1.6rem] font-semibold mb-5">
-                Basics
-              </div>
-              <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut laudantium ullam eius, provident nostrum earum obcaecati minus saepe quis commodi ipsum eos eveniet odio, quisquam rerum sed aliquid ipsam dolorum non, voluptatem incidunt vel sint autem. Fugiat aperiam possimus sequi?
+            <div className="text-[#2c3e50] h-full px-10 pb-10 text-[14px]">
+              <div className="mb-[-30px] ">
+
+                {/* <span className="text-xs italic">
+                  Basics
+                </span> */}
+                {/* <div className="text-[1.6rem] font-semibold mb-5">
+                  Intro
+                </div> */}
+
+                <div className="text-[1.6rem] font-semibold mb-5">
+                  Basics
+                </div>
+                <div id="vowels" className="text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] border-[#eaecef]">
+                  Intro
+                </div>
+                <div>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut laudantium ullam eius, provident nostrum earum obcaecati minus saepe quis commodi ipsum eos eveniet odio, quisquam rerum sed aliquid ipsam dolorum non, voluptatem incidunt vel sint autem. Fugiat aperiam possimus sequi?
+                </div>
               </div>
 
-              <div id="vowels" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+              <div id="vowels" className="text-[1.25rem] pb-[.3rem] pt-[70px] font-semibold border-b-[1px] border-[#eaecef]">
                 Vowels
               </div>
-              <div>
+              {/* <div>
                 In Khmer, the official language of Cambodia, vowels play a significant role in the structure of words. Khmer vowels can be categorized into short vowels, long vowels, and diphthongs.
-              </div>
+              </div> */}
               <div className="mt-5 grid grid-cols-5 text-[30px] text-center gap-y-5">
-                <div><span className="cursor-pointer">ក្ក</span></div>
-                <div><span className="cursor-pointer">ខ្ខ</span></div>
-                <div><span className="cursor-pointer">គ្គ</span></div>
-                <div><span className="cursor-pointer">ឃ្ឃ</span></div>
-                <div><span className="cursor-pointer">ង្ង</span></div>
-                <div><span className="cursor-pointer">ច្ច</span></div>
-                <div><span className="cursor-pointer">ឆ្ឆ</span></div>
-                <div><span className="cursor-pointer">ជ្ជ</span></div>
-                <div><span className="cursor-pointer">ឈ្ឈ</span></div>
-                <div><span className="cursor-pointer">ញ្ញ</span></div>
-                <div><span className="cursor-pointer">ដ្ដ</span></div>
-                <div><span className="cursor-pointer">ឋ្ឋ</span></div>
-                <div><span className="cursor-pointer">ឌ្ឌ</span></div>
-                <div><span className="cursor-pointer">ឍ្ឍ</span></div>
-                <div><span className="cursor-pointer">ណ្ណ</span></div>
-                <div><span className="cursor-pointer">ត្ត</span></div>
-                <div><span className="cursor-pointer">ថ្ថ</span></div>
-                <div><span className="cursor-pointer">ទ្ទ</span></div>
-                <div><span className="cursor-pointer">ធ្ធ</span></div>
-                <div><span className="cursor-pointer">ន្ន</span></div>
-                <div><span className="cursor-pointer">ប្ប</span></div>
-                <div><span className="cursor-pointer">ផ្ផ</span></div>
-                <div><span className="cursor-pointer">ព្ព</span></div>
-                <div><span className="cursor-pointer">ភ្ភ</span></div>
-                <div><span className="cursor-pointer">ម្ម</span></div>
-                <div><span className="cursor-pointer">យ្យ</span></div>
-                <div><span className="cursor-pointer">រ្រ</span></div>
-                <div><span className="cursor-pointer">ល្ល</span></div>
-                <div><span className="cursor-pointer">វ្វ</span></div>
-                <div><span className="cursor-pointer">ស្ស</span></div>
-                <div><span className="cursor-pointer">ហ្ហ</span></div>
-                <div><span className="cursor-pointer">ឡ</span></div>
-                <div><span className="cursor-pointer">អ្អ</span></div>
+                {characters.vowels.chars.map((item, index) => (
+                  <div key="index" className="w-full flex justify-center">
+                    <div className="relative w-min">
+                      <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
+                        <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                      </div>
+                      <span className="cursor-pointer">{item.khmer}</span>
+                    </div>
+                  </div>
+                ))}
+
               </div>
-              {/* ក (ka)
-ខ (kha)
-គ (ko)
-ឃ (kho)
-ង (ngo */}
-              <div id="consonants" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+              <div id="consonants" className="text-[1.25rem] pb-[.3rem] pt-[70px] font-semibold border-b-[1px] border-[#eaecef]">
                 Consonants
               </div>
-              <div>
+              {/* <div>
                 In Khmer, the official language of Cambodia, vowels play a significant role in the structure of words. Khmer vowels can be categorized into short vowels, long vowels, and diphthongs.
-              </div>
+              </div> */}
               <div className="mt-5 grid grid-cols-5 text-[30px] text-center gap-y-5">
-                <div><span className="cursor-pointer">កា</span></div>
-                <div><span className="cursor-pointer">កិ</span></div>
-                <div><span className="cursor-pointer">កី</span></div>
-                <div><span className="cursor-pointer">កឹ</span></div>
-                <div><span className="cursor-pointer">កឺ</span></div>
-                <div><span className="cursor-pointer">កុ</span></div>
-                <div><span className="cursor-pointer">កូ</span></div>
-                <div><span className="cursor-pointer">កួ</span></div>
-                <div><span className="cursor-pointer">កើ</span></div>
-                <div><span className="cursor-pointer">កឿ</span></div>
-                <div><span className="cursor-pointer">កៀ</span></div>
-                <div><span className="cursor-pointer">កេ</span></div>
-                <div><span className="cursor-pointer">កែ</span></div>
-                <div><span className="cursor-pointer">កៃ</span></div>
-                <div><span className="cursor-pointer">កោ</span></div>
-                <div><span className="cursor-pointer">កៅ</span></div>
-                <div><span className="cursor-pointer">កុំ</span></div>
-                <div><span className="cursor-pointer">កំ</span></div>
-                <div><span className="cursor-pointer">កាំ</span></div>
-                <div><span className="cursor-pointer">កះ</span></div>
-                <div><span className="cursor-pointer">កុះ</span></div>
-                <div><span className="cursor-pointer">កេះ</span></div>
-                <div><span className="cursor-pointer">កោះ</span></div>
+                {characters.consonants.chars.map((item, index) => (
+                  <div key="index" className="w-full flex justify-center">
+                    <div className="relative w-min">
+                      <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
+                        <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                      </div>
+                      <span className="cursor-pointer">{item.khmer}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
 
-              <div id="special" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+              <div id="special" className="text-[1.25rem] pb-[.3rem] pt-[70px] font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                 Special Characters
               </div>
-              <div>
+              {/* <div>
                 In Khmer, the official language of Cambodia, vowels play a significant role in the structure of words. Khmer vowels can be categorized into short vowels, long vowels, and diphthongs.
-              </div>
+              </div> */}
 
               <div className="mt-5 grid grid-cols-5 text-[30px] text-center gap-y-5">
-                <div><span className="cursor-pointer">ឥ</span></div>
-                <div><span className="cursor-pointer">ឧ</span></div>
-                <div><span className="cursor-pointer">ឯ</span></div>
-                <div><span className="cursor-pointer">ឰ</span></div>
-                <div><span className="cursor-pointer">ឱ</span></div>
-                <div><span className="cursor-pointer">ឲ</span></div>
-                <div><span className="cursor-pointer">ឳ</span></div>
-                <div><span className="cursor-pointer">ឫ</span></div>
-                <div><span className="cursor-pointer">ឩ</span></div>
+                {
+                  characters.special.chars.map((item, index) => (
+                    <div key="index" className="w-full flex justify-center">
+                      <div className="relative w-min">
+                        <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
+                          <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                        </div>
+                        <span className="cursor-pointer">{item.khmer}</span>
+                      </div>
+                    </div>
+                  ))
+                }
               </div>
 
               <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                 Numerals
               </div>
-              <div>
+              {/* <div>
                 In Khmer, the official language of Cambodia, vowels play a significant role in the structure of words. Khmer vowels can be categorized into short vowels, long vowels, and diphthongs.
-              </div>
+              </div> */}
               <div className="mt-5 grid grid-cols-5 text-[30px] text-center gap-y-5">
-                <div><span className="cursor-pointer">០</span></div>
-                <div><span className="cursor-pointer">១</span></div>
-                <div><span className="cursor-pointer">២</span></div>
-                <div><span className="cursor-pointer">៣</span></div>
-                <div><span className="cursor-pointer">៤</span></div>
-                <div><span className="cursor-pointer">៥</span></div>
-                <div><span className="cursor-pointer">៦</span></div>
-                <div><span className="cursor-pointer">៧</span></div>
-                <div><span className="cursor-pointer">៨</span></div>
-                <div><span className="cursor-pointer">៩</span></div>
+                {
+                  characters.numbers.chars.map((item, index) => (
+                    <div key="index" className="w-full flex justify-center">
+                      <div className="relative w-min">
+                        <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
+                          <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                        </div>
+                        <span className="cursor-pointer">{item.khmer}</span>
+                      </div>
+                    </div>
+                  ))
+                }
               </div>
               {/* Start Side Bar - RIGHT */}
 
@@ -164,16 +141,18 @@ export default async function Account() {
                   On this page
                 </div>
                 <div className="pl-3 flex flex-col gap-1">
-                  <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Shopping and Dining Out</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Education and Learning</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Intro</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Vowels</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Consonants</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Special Characters</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Numerals</div>
                 </div>
               </div>
 
 
-              <div className="text-xs font-extralight text-right block pt-12 pb-3">
+              {/* Main Body Section Footer */}
+
+              <div className="text-sm text-right block pt-20 pb-3">
                 Last updated: 01/01/24
               </div>
               <div >
@@ -187,6 +166,8 @@ export default async function Account() {
                   Next →
                 </div>
               </div>
+
+              {/* Start Right SideBar */}
             </div>
           </div>
         </div>

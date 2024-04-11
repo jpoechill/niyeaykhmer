@@ -1,6 +1,7 @@
 import AccountForm from './account-form'
 import { createClient } from '@/utils/supabase/server'
 import Image from "next/image";
+import Link from 'next/link'
 
 export default async function getCred() {
     const supabase = createClient()
@@ -13,10 +14,10 @@ export default async function getCred() {
         <main className="h-full">
             <div className="fixed bg-white w-full text-[#428777] z-10 px-5 md:px-8 border-b-[1px] top-0 flex flex-row items-center justify-between h-[60px]">
                 <div className="flex uppercase font-semibold items-center pt-1 text-md text-[14px]">
-                    <a href="/">
+                    <Link href="/">
                         <Image src="/logo_green.svg" width={24} height={100} alt="REAN KHMER" className="inline mr-3 pb-1" />
                         niyeay khmer
-                    </a>
+                    </Link>
                 </div>
                 <div className="hidden md:flex text-[#428777] flex-row text-[14px] items-center gap-10">
                     <div>

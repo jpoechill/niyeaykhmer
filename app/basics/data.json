@@ -1,0 +1,323 @@
+{
+    "vowels": {
+        "title": "Vowels",
+        "chars": [
+            {
+                "khmer": "ក្ក",
+                "audio": ""
+            },
+            {
+                "khmer": "ខ្ខ",
+                "audio": ""
+            },
+            {
+                "khmer": "គ្គ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឃ្ឃ",
+                "audio": ""
+            },
+            {
+                "khmer": "ង្ង",
+                "audio": ""
+            },
+            {
+                "khmer": "ច្ច",
+                "audio": ""
+            },
+            {
+                "khmer": "ឆ្ឆ",
+                "audio": ""
+            },
+            {
+                "khmer": "ជ្ជ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឈ្ឈ",
+                "audio": ""
+            },
+            {
+                "khmer": "ញ្ញ",
+                "audio": ""
+            },
+            {
+                "khmer": "ដ្ដ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឋ្ឋ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឌ្ឌ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឍ្ឍ",
+                "audio": ""
+            },
+            {
+                "khmer": "ណ្ណ",
+                "audio": ""
+            },
+            {
+                "khmer": "ត្ត",
+                "audio": ""
+            },
+            {
+                "khmer": "ថ្ថ",
+                "audio": ""
+            },
+            {
+                "khmer": "ទ្ទ",
+                "audio": ""
+            },
+            {
+                "khmer": "ធ្ធ",
+                "audio": ""
+            },
+            {
+                "khmer": "ន្ន",
+                "audio": ""
+            },
+            {
+                "khmer": "ប្ប",
+                "audio": ""
+            },
+            {
+                "khmer": "ផ្ផ",
+                "audio": ""
+            },
+            {
+                "khmer": "ព្ព",
+                "audio": ""
+            },
+            {
+                "khmer": "ភ្ភ",
+                "audio": ""
+            },
+            {
+                "khmer": "ម្ម",
+                "audio": ""
+            },
+            {
+                "khmer": "យ្យ",
+                "audio": ""
+            },
+            {
+                "khmer": "រ្រ",
+                "audio": ""
+            },
+            {
+                "khmer": "ល្ល",
+                "audio": ""
+            },
+            {
+                "khmer": "វ្វ",
+                "audio": ""
+            },
+            {
+                "khmer": "ស្ស",
+                "audio": ""
+            },
+            {
+                "khmer": "ហ្ហ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឡ",
+                "audio": ""
+            },
+            {
+                "khmer": "",
+                "audio": ""
+            }
+        ]
+    },
+    "consonants": {
+        "title": "Consonants",
+        "chars": [
+            {
+                "khmer": "កា",
+                "audio": ""
+            },
+            {
+                "khmer": "កិ",
+                "audio": ""
+            },
+            {
+                "khmer": "កី",
+                "audio": ""
+            },
+            {
+                "khmer": "កឹ",
+                "audio": ""
+            },
+            {
+                "khmer": "កឺ",
+                "audio": ""
+            },
+            {
+                "khmer": "កុ",
+                "audio": ""
+            },
+            {
+                "khmer": "កូ",
+                "audio": ""
+            },
+            {
+                "khmer": "កួ",
+                "audio": ""
+            },
+            {
+                "khmer": "កើ",
+                "audio": ""
+            },
+            {
+                "khmer": "កឿ",
+                "audio": ""
+            },
+            {
+                "khmer": "កៀ",
+                "audio": ""
+            },
+            {
+                "khmer": "កេ",
+                "audio": ""
+            },
+            {
+                "khmer": "កែ",
+                "audio": ""
+            },
+            {
+                "khmer": "កៃ",
+                "audio": ""
+            },
+            {
+                "khmer": "កោ",
+                "audio": ""
+            },
+            {
+                "khmer": "កៅ",
+                "audio": ""
+            },
+            {
+                "khmer": "កុំ",
+                "audio": ""
+            },
+            {
+                "khmer": "កំ",
+                "audio": ""
+            },
+            {
+                "khmer": "កាំ",
+                "audio": ""
+            },
+            {
+                "khmer": "កះ",
+                "audio": ""
+            },
+            {
+                "khmer": "កុះ",
+                "audio": ""
+            },
+            {
+                "khmer": "កេះ",
+                "audio": ""
+            },
+            {
+                "khmer": "កោះ",
+                "audio": ""
+            }
+        ]
+    },
+    "special": {
+        "title": "Special Characters",
+        "chars": [
+            {
+                "khmer": "ឥ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឧ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឯ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឰ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឱ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឲ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឳ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឫ",
+                "audio": ""
+            },
+            {
+                "khmer": "ឩ",
+                "audio": ""
+            }
+        ]
+    },
+
+    "numbers": {
+        "title": "Numbers",
+        "chars": [
+                {
+                    "khmer": "០",
+                    "audio": ""
+                },
+                {
+                    "khmer": "១",
+                    "audio": ""
+                },
+                {
+                    "khmer": "២",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៣",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៤",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៥",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៦",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៧",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៨",
+                    "audio": ""
+                },
+                {
+                    "khmer": "៩",
+                    "audio": ""
+                }
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+[
+    {
+      "category": "greetings",
+      "title": "Greetings",
+      "phrases": [
+        {
+          "khmer": "ក្ក",
+          "english": "",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "expressions",
+      "title": "Polite Expressions",
+      "phrases": [
+        {
+          "khmer": "កា",
+          "english": "",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "negations",
+      "title": "Negation",
+      "phrases": [
+        {
+          "khmer": "ឥ",
+          "english": "",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "directions",
+      "title": "Directions and Movement",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "apologies",
+      "title": "Apologies",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "countries",
+      "title": "Countries and Nationalities",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "emergency",
+      "title": "Emergency",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "miscellaneous",
+      "title": "Miscellaneous",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    }
+  ]

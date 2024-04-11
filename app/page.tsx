@@ -24,8 +24,10 @@ export default async function Account() {
         <LeftSideBar></LeftSideBar>
 
         <div className="w-full pl-[300px] h-full top-[60px]">
-          <div className="mt-[60px] h-full w-full p-8">
+          <div className="mt-[60px] w-full p-8">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
+
+              Main Page
               <span className="text-xs italic">
                 Intermediate
               </span>
@@ -39,8 +41,11 @@ export default async function Account() {
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                 Daily Life and Activities
               </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
+
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
@@ -51,10 +56,12 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
-                  <span className="text-[26px] cursor-pointer">
+                  <span className="z-1 text-[26px] cursor-pointer">
                     បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
                   </span><br />
                 </div>
@@ -63,8 +70,11 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
@@ -75,8 +85,10 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
@@ -87,8 +99,10 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
@@ -103,8 +117,10 @@ export default async function Account() {
               <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                 Travel and Tourism
               </div>
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
@@ -115,8 +131,10 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
@@ -127,8 +145,10 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
@@ -139,8 +159,10 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
@@ -151,8 +173,10 @@ export default async function Account() {
                 </div>
               </div>
 
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
+              <div className="group relative mb-7">
+                <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                  <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                </div>
                 <div>
                   <span className="text-[26px] cursor-pointer">
                     ពេលសម្រាកអាហារថ្ងៃត្រង់ ខ្ញុំចូលចិត្តសម្រាក និងជជែកជាមួយមិត្តរួមការងារ។
@@ -176,9 +200,8 @@ export default async function Account() {
               </div>
 
 
-              {/* Main Body Section Footer */}
 
-              <div className="text-sm text-right block pt-6 pb-3">
+              <div className="text-sm text-right block pt-20 pb-3">
                 Last updated: 01/01/24
               </div>
               <div >
@@ -193,7 +216,6 @@ export default async function Account() {
                 </div>
               </div>
 
-              {/* Start Right SideBar */}
 
               <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed pt-5 p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
                 <div className="font-semibold mb-1">
@@ -208,7 +230,6 @@ export default async function Account() {
                 </div>
               </div>
 
-              {/* End Right SideBar */}
 
             </div>
           </div>

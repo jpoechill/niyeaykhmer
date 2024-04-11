@@ -1,0 +1,55 @@
+[
+    {
+      "category": "daily",
+      "title": "Daily Life and Activities",
+      "phrases": [
+        {
+          "khmer": "ក្ក",
+          "english": "",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "travel",
+      "title": "Travel and Tourism",
+      "phrases": [
+        {
+          "khmer": "កា",
+          "english": "",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "social",
+      "title": "Socializing and Relationships",
+      "phrases": [
+        {
+          "khmer": "ឥ",
+          "english": "",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "shopping",
+      "title": "Shopping and Dining Out",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "category": "education",
+      "title": "Education and Learning",
+      "phrases": [
+        {
+          "khmer": "០",
+          "audio": ""
+        }
+      ]
+    }
+  ]
