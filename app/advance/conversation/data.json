@@ -1,55 +1,152 @@
 [
     {
-      "category": "daily",
-      "title": "Daily Life and Activities",
-      "phrases": [
-        {
-          "khmer": "ក្ក",
-          "english": "",
-          "audio": ""
-        }
-      ]
+        "title": "Philosophical Discussions",
+        "phrases": [
+            {
+                "english": "Let's delve into the nature of reality and how we perceive it.",
+                "khmer": "តើយើងចូលចិត្តទៅក្នុងគ្រឹះស្ថាននិងទិន្នន័យដែរឬទេ?",
+                "audio": ""
+            },
+            {
+                "english": "I find the concept of free will versus determinism quite intriguing.",
+                "khmer": "ខ្ញុំឃើញប្រភេទនៃការមិនទាន់ផ្តល់រូបមន្តនិងអន្តរក្នុងការបញ្ចូលប្រឆាំងដោយត្រិស្តភាគច្រើន។",
+                "audio": ""
+            },
+            {
+                "english": "Have you ever contemplated the pursuit of happiness from a philosophical standpoint?",
+                "khmer": "តើអ្នកដឹងចំលើយបានទេការស្របតាមទិសនានិងសិរីស្ទេនការប្រកួតចំពោះការរីករាយមួយដែរឬទេ?",
+                "audio": ""
+            },
+            {
+                "english": "It's fascinating to explore the connections between morality and religion.",
+                "khmer": "ការស្រលាញគ្នារវាងភាពសំដីនិងសារពលរឿងដើម្បីធ្វើឱ្យទាន់សម័យ។",
+                "audio": ""
+            },
+            {
+                "english": "We could discuss existentialist themes like identity and purpose for hours.",
+                "khmer": "យើងអាចពិភាក្សាបានលឿនបំផុតអំពីបទបញ្ចូលស្រ្តីដូចជាការសង្ឃឹមនិងគោលដៅរបស់វា។",
+                "audio": ""
+            }
+        ]
     },
     {
-      "category": "travel",
-      "title": "Travel and Tourism",
-      "phrases": [
-        {
-          "khmer": "កា",
-          "english": "",
-          "audio": ""
-        }
-      ]
+        "title": "Current Events and Global Issues",
+        "phrases": [
+            {
+                "english": "I'm interested in your take on recent climate change initiatives.",
+                "khmer": "ខ្ញុំចូលចិត្តក្នុងការទទួលយកនូវប្រាសាទរបស់អ្នកលើការដោះស្រាយនៅលើប្រទេសនៅពេលថ្ងៃកណ្តាលសហរដ្ឋអាមេរិក។",
+                "audio": ""
+            },
+            {
+                "english": "Social media seems to have a significant impact on shaping political discourse, don't you think?",
+                "khmer": "ទូទៅសិទ្ធិមានទំនាក់ទំនងជាមួយបញ្ហាអត្ថបទនិងបច្ចេកវិទ្យាសង្ខេបរបស់ប្រធានប្រជាធិបតេយ្យដែលអ្នកគិតថា?",
+                "audio": ""
+            },
+            {
+                "english": "Globalization brings both benefits and challenges to developing nations.",
+                "khmer": "ការបរិភោគមិនមែនជាវិធីសាស្រ្តបែបប្រមូលផ្តុំទីតាំងជាតិសម្រាប់ប្រទេសដែលកំពុងបង្កើតផ្ទៃខាងលិចទៅតាមការគ្រប់គ្រង។",
+                "audio": ""
+            },
+            {
+                "english": "Addressing systemic racism and promoting social justice are crucial in today's world.",
+                "khmer": "ការដោះស្រាយការប្រឆាំងប្រយ័ត្ននិងការគាំទ្រសង្គ្រោះជាតិសូម្បីគាំទ្រសង្គ្រោះជាតិជាក់លាក់នៅក្នុងពិភពលោកនៅថ្ងៃនេះ។",
+                "audio": ""
+            },
+            {
+                "english": "Balancing economic growth with environmental sustainability is a complex task.",
+                "khmer": "ការសម្តែងតែងតាំងនិងការសង្គ្រោះទាហានពីប្រទេសកំពុងត្រូវបានសមរម្យជាក់លាក់។",
+                "audio": ""
+            }
+        ]
     },
     {
-      "category": "social",
-      "title": "Socializing and Relationships",
-      "phrases": [
-        {
-          "khmer": "ឥ",
-          "english": "",
-          "audio": ""
-        }
-      ]
+        "title": "Literary Analysis and Critique",
+        "phrases": [
+            {
+                "english": "Let's analyze the symbolism of the river in 'Heart of Darkness.'",
+                "khmer": "ទាញយកការវាយតម្លៃរូបភាពនៃទីនេះក្នុងការនិពន្ធរឿងទីនេះរបស់ចំណងជើងគោលបក្សខ្លះ។",
+                "audio": ""
+            },
+            {
+                "english": "The stream-of-consciousness narration in 'Ulysses' offers unique insights into the protagonist's psyche.",
+                "khmer": "ការនិពន្ធគិតលើស្ថានភាពប្រវែងពីខួរបញ្ជានៃរឿងទីនេះផ្ដោតពីគោលនយោបាយស្រដៀងនៃនិយាយរបស់នាយឧត្តម។",
+                "audio": ""
+            },
+            {
+                "english": "Magical realism adds depth to social and political commentary in Latin American literature.",
+                "khmer": "ការស្តេចស្តាយភាពពេញនិយមគ្នាទៅកាន់ការវាយតម្លៃសង្ខាងទីនេះក្នុងអត្ថបទនៃសិល្បៈអាមេរិក។",
+                "audio": ""
+            },
+            {
+                "english": "The author's choice of setting greatly influences the mood and atmosphere of the novel.",
+                "khmer": "ការជ្រើសរើសទីកន្លែងនៃរឿងចិត្តមិនតែផ្ដល់បញ្ហាល្បីរបស់រឿងទេព្រោះវាក៏ជួបប្រយោជន៍នៃបញ្ហារបស់រឿង។",
+                "audio": ""
+            },
+            {
+                "english": "We can draw intriguing parallels between characters in 'The Great Gatsby' and the Roaring Twenties.",
+                "khmer": "យើងអាចគូររឿងគូររឿងមានស្ថានភាពរួមរួមនៅក្នុងរឿងនេះនិងព្រឺតិនៅឆ្នាំទីពីរដែលទទួលបានការពិពណ៌នាទាំងនៅតំបន់និវត្តន៍ចន្លោះ។",
+                "audio": ""
+            }
+        ]
     },
     {
-      "category": "shopping",
-      "title": "Shopping and Dining Out",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
+        "title": "Cultural Exchange and Traditions",
+        "phrases": [
+            {
+                "english": "Could you share a cultural tradition or celebration from your country?",
+                "khmer": "តើអ្នកអាចចែកចាយប្រសិទ្ធិនិងការទិញចូលពីប្រទេសរបស់អ្នកដែរឬទេ?",
+                "audio": ""
+            },
+            {
+                "english": "I'm fascinated by the diversity of family dynamics across different cultures.",
+                "khmer": "ខ្ញុំឃើញការចូលចិត្តក្នុងបរិស្ថានសកម្មគ្រប់គ្រងគ្នារវាងភាពរបស់គ្រួសារទាក់ទងច្រើនប្រទេសដូចគ្នា។",
+                "audio": ""
+            },
+            {
+                "english": "It's important to preserve cultural heritage in the face of globalization.",
+                "khmer": "ការសង្គ្រោះបច្ចុប្បន្នបរិស្ថានសម្រាប់កសិកម្មពីប្រទេសក្នុងព្រឹត្តិការណ៍។",
+                "audio": ""
+            },
+            {
+                "english": "Traditions surrounding food often reveal a lot about a culture's values and history.",
+                "khmer": "គោលដៅបរិស្ថានដែលមានសមត្ថភាពលើអាហារមែនទេចេញពីជាតិរបស់គ្រួសារនិងប្រវត្តិនិងប្រវត្តិនិងប្រវត្តិនិងប្រវត្តិ។",
+                "audio": ""
+            },
+            {
+                "english": "Let's explore the similarities and differences between our cultural customs.",
+                "khmer": "តាមដានការដឹកនាំនិងភាពស្មោះគ្នារវាងការស្រឡាញ់គោលដៅស្របគ្នារបស់យើង។",
+                "audio": ""
+            }
+        ]
     },
     {
-      "category": "education",
-      "title": "Education and Learning",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
+        "title": "Learning a New Language",
+        "phrases": [
+            {
+                "english": "Practice is key when it comes to mastering a new language.",
+                "khmer": "ការប្រាកដជាការគោរពជំនឿននៅពេលដែលការដោះស្រាយការនិយាយភាសាថ្មី។",
+                "audio": ""
+            },
+            {
+                "english": "Listening to native speakers helps improve pronunciation and fluency.",
+                "khmer": "ការស្ដាប់ទៅភាសាប្រចាំខ្មែរជាមួយសំលេងអត្ថបទជួបបទប្រចាំខ្មែរជាមួយមាតាប្រចាំខ្មែរ។",
+                "audio": ""
+            },
+            {
+                "english": "Reading newspapers and books in the target language aids comprehension.",
+                "khmer": "ការអានព្រាថ្នាប់និងសៀវភៅនៅក្នុងភាសាដែលបានគេជ្រើសរើសជួបបទេពីសាសនា។",
+                "audio": ""
+            },
+            {
+                "english": "Watching movies with subtitles is a fun way to learn colloquial expressions.",
+                "khmer": "ការមើលរឿងជាមួយនិងប្រចាំប្រភេទមានស្ថានភាពគីឡូក្រមរឿងគឺជាវិធីសាស្រ្តដែលប្រសើរស្មើគ្នា។",
+                "audio": ""
+            },
+            {
+                "english": "Joining language exchange groups can provide valuable opportunities for practice.",
+                "khmer": "ការចូលរួមក្នុងក្រុមគំនិតភាសាអាហារអាហារជួបបទអាហារជួបបទមានសមត្ថភាពអំពីការច្រៀង។",
+                "audio": ""
+            }
+        ]
     }
-  ]
+]

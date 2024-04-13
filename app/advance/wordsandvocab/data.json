@@ -1,55 +1,62 @@
 [
-    {
-      "category": "daily",
-      "title": "Daily Life and Activities",
-      "phrases": [
-        {
-          "khmer": "ក្ក",
-          "english": "",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "travel",
-      "title": "Travel and Tourism",
-      "phrases": [
-        {
-          "khmer": "កា",
-          "english": "",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "social",
-      "title": "Socializing and Relationships",
-      "phrases": [
-        {
-          "khmer": "ឥ",
-          "english": "",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "shopping",
-      "title": "Shopping and Dining Out",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "education",
-      "title": "Education and Learning",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    }
-  ]
+  {
+    "name": "Philosophy",
+    "words": [
+      { "english": "Metaphysics", "khmer": "គន្លឹះនិយម" },
+      { "english": "Ethics", "khmer": "សមត្ថភាព" },
+      { "english": "Epistemology", "khmer": "វិទ្យុសាស្រ្តវិទ្យាសម្រាប់ការសិក្សា" },
+      { "english": "Aesthetics", "khmer": "សមត្ថភាពអារម្មណ៍" },
+      { "english": "Logic", "khmer": "វិទ្យុត្រូវបាន" },
+      { "english": "Existentialism", "khmer": "សមត្ថភាពរដ្ឋបាល" },
+      { "english": "Idealism", "khmer": "សមត្ថភាពបំបែក" },
+      { "english": "Pragmatism", "khmer": "សមត្ថភាពល្អបំផុត" },
+      { "english": "Rationalism", "khmer": "សមត្ថភាពរាស្ត្រនិយម" },
+      { "english": "Empiricism", "khmer": "សមត្ថភាពសាស្ត្រនិយម" }
+    ]
+  },
+  {
+    "name": "Mathematics",
+    "words": [
+      { "english": "Calculus", "khmer": "កាលុយលុយ" },
+      { "english": "Topology", "khmer": "ការបង្វិលស្ប៊ី" },
+      { "english": "Number Theory", "khmer": "ស្ថានីយប្រភេទលេខ" },
+      { "english": "Linear Algebra", "khmer": "អាល់ហ្គូរប្រភណារបស់ខ្លួន" },
+      { "english": "Differential Equations", "khmer": "សមត្ថភាពកាលុយលុយរបស់ខ្លួន" },
+      { "english": "Probability Theory", "khmer": "ស្ថានីយប្រភេទប្រាសាទិក" },
+      { "english": "Geometry", "khmer": "រូបភាពស្តុក" },
+      { "english": "Statistics", "khmer": "ស្ថានីយប្រភេទស្ថិតិ" },
+      { "english": "Logic", "khmer": "ការបង្ហាញត្រូវបាន" },
+      { "english": "Game Theory", "khmer": "ស្ថានីយប្រភេទល្បាយ" }
+    ]
+  },
+  {
+    "name": "Medicine",
+    "words": [
+      { "english": "Neurology", "khmer": "គ្រូរស្វាយឧកញ៉ា" },
+      { "english": "Oncology", "khmer": "សុខភាពលោកស្រី" },
+      { "english": "Cardiology", "khmer": "គ្រឿងសេដ្ឋី" },
+      { "english": "Endocrinology", "khmer": "អនុរដ្ឋក្នុងសេដ្ឋី" },
+      { "english": "Dermatology", "khmer": "ជនជាតិរបស់សម្រស់" },
+      { "english": "Gastroenterology", "khmer": "រាគីភីអង្គក្រអត្រនៃការមេរោគគ្រួសារ" },
+      { "english": "Orthopedics", "khmer": "ការមេរោគកង្ខៀង" },
+      { "english": "Pulmonology", "khmer": "ការមេរោគក្បាល" },
+      { "english": "Urology", "khmer": "វិសាលនគរបារប្រភេទ" },
+      { "english": "Psychiatry", "khmer": "មនុស្សស្រីកិច្ចបារី" }
+    ]
+  },
+  {
+    "name": "Technology",
+    "words": [
+      { "english": "Artificial Intelligence", "khmer": "ភាពអស្ចារ្យនៃការរំពឹង" },
+      { "english": "Blockchain", "khmer": "ប្លង់ក្រហម" },
+      { "english": "Virtual Reality", "khmer": "អាកម្មប្រឌិតប្រតិបត្តិការ" },
+      { "english": "Augmented Reality", "khmer": "ភាពអនុគមន៍ពន្លឺ" },
+      { "english": "Nanotechnology", "khmer": "ប្រដាប់ចម្រុះ" },
+      { "english": "Robotics", "khmer": "ភាពអាជ្ញាធរជ្រុង" },
+      { "english": "Biotechnology", "khmer": "វិធីសាស្រ្តវិសាខប្រទាលក្នុង" },
+      { "english": "Quantum Computing", "khmer": "ការរំពឹងក្រៅសន្ទុះ" },
+      { "english": "Cybersecurity", "khmer": "សន្ទានុក្រសួងប្រាក់ខ្លះ" },
+      { "english": "Internet of Things (IoT)", "khmer": "អេឡិចត្រូនិចនៃអេឡិចត្រូនិច" }
+    ]
+  }
+]

@@ -1,85 +1,62 @@
 [
-    {
-      "category": "greetings",
-      "title": "Greetings",
-      "phrases": [
-        {
-          "khmer": "ក្ក",
-          "english": "",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "expressions",
-      "title": "Polite Expressions",
-      "phrases": [
-        {
-          "khmer": "កា",
-          "english": "",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "negations",
-      "title": "Negation",
-      "phrases": [
-        {
-          "khmer": "ឥ",
-          "english": "",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "directions",
-      "title": "Directions and Movement",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "apologies",
-      "title": "Apologies",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "countries",
-      "title": "Countries and Nationalities",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "emergency",
-      "title": "Emergency",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    },
-    {
-      "category": "miscellaneous",
-      "title": "Miscellaneous",
-      "phrases": [
-        {
-          "khmer": "០",
-          "audio": ""
-        }
-      ]
-    }
-  ]
+  {
+    "name": "Geography",
+    "words": [
+      { "english": "Mountain", "khmer": "ភ្នំ" },
+      { "english": "River", "khmer": "ទន្លេ" },
+      { "english": "Ocean", "khmer": "សមុទ្រ" },
+      { "english": "Continent", "khmer": "ពិភពលោក" },
+      { "english": "Island", "khmer": "កោះ" },
+      { "english": "Valley", "khmer": "បឹង" },
+      { "english": "Desert", "khmer": "ខេត្តជនជាតិ" },
+      { "english": "Glacier", "khmer": "ភ្នំជល់" },
+      { "english": "Volcano", "khmer": "ភ្នំកំពូល" },
+      { "english": "Cave", "khmer": "ភ្នំប្រហារ" }
+    ]
+  },
+  {
+    "name": "History",
+    "words": [
+      { "english": "Civilization", "khmer": "សិល្បៈមហាសមុទ្រ" },
+      { "english": "Empire", "khmer": "អាណាចក្រមហាសមុទ្រ" },
+      { "english": "Revolution", "khmer": "របបប្រេង" },
+      { "english": "Dynasty", "khmer": "សារមហាសមុទ្រ" },
+      { "english": "Colonization", "khmer": "ការប្រជុំរឿងចុះផ្សាយ" },
+      { "english": "Renaissance", "khmer": "ស្តាប់នូវវិសាខ" },
+      { "english": "Industrialization", "khmer": "ការស្រុករស់" },
+      { "english": "World War", "khmer": "សង្គ្រាមពិភពលោក" },
+      { "english": "Monarchy", "khmer": "ស្រុកមហាសមុទ្រ" },
+      { "english": "Invasion", "khmer": "ការចូលរួម" }
+    ]
+  },
+  {
+    "name": "Science",
+    "words": [
+      { "english": "Gravity", "khmer": "គម្លាត" },
+      { "english": "Chemistry", "khmer": "គីមីវិទ្យា" },
+      { "english": "Biology", "khmer": "ជីវវិទ្យា" },
+      { "english": "Astronomy", "khmer": "រដ្ឋសភាព" },
+      { "english": "Meteorology", "khmer": "រដ្ឋនិយាយវិទ្យា" },
+      { "english": "Ecology", "khmer": "អេកូហ្ស៊ី" },
+      { "english": "Genetics", "khmer": "សាស្ត្រប្រចាំសារ" },
+      { "english": "Physics", "khmer": "វិទ្យាសាស្រ្ត" },
+      { "english": "Botany", "khmer": "ជីវវិទ្យា​អន្តរជាតិ" },
+      { "english": "Zoology", "khmer": "ជីវវិទ្យាចិញ្ចឹម" }
+    ]
+  },
+  {
+    "name": "Literature",
+    "words": [
+      { "english": "Poetry", "khmer": "ប្រកាន់" },
+      { "english": "Drama", "khmer": "ទំនាក់ទំនង" },
+      { "english": "Novel", "khmer": "រឿងសត្វ" },
+      { "english": "Fiction", "khmer": "រឿងកាល" },
+      { "english": "Biography", "khmer": "ជីវិតកាល" },
+      { "english": "Essay", "khmer": "សេចក្ដីប្រកាស" },
+      { "english": "Prose", "khmer": "ប្រភេទគណិត" },
+      { "english": "Literary Criticism", "khmer": "ការវិលត្រនាស់សាស្រ្ត" },
+      { "english": "Tragedy", "khmer": "ទំនុកសម្រស់" },
+      { "english": "Comedy", "khmer": "កំប្លែង" }
+    ]
+  }
+]

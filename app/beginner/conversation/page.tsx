@@ -47,19 +47,22 @@ export default async function Account() {
                     <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                       {item.title}
                     </div>
-
-                    <div className="mt-5 grid grid-cols-1 text-[30px] text-left gap-y-5">
-                      {/* <div className="w-full flex-col flex-wrap justify-center"> */}
+                    <div className="mt-5 grid grid-cols-1 text-[28px] text-left gap-y-5">
                       {item.phrases.map((phrase, phraseIndex) => (
-                        <div key="phraseIndex" className="relative">
-                          <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
-                            <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
+                        <div key="phraseIndex" className="group relative mb-0">
+                          <div className="h-full min-w-[20px] absolute -left-8 pt-[0px] w-full cursor-pointer">
+                            <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden group-hover:inline-block mr-3 pb-1" />
                           </div>
-                          <span className="cursor-pointer">{phrase.khmer}</span>
+                          <span className="cursor-pointer">
+                            {phrase.khmer}
+                          </span>
+                          <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                            {phrase.english}
+                          </div>
                         </div>
+
                       ))}
                     </div>
-
                   </div>
                 ))
               }

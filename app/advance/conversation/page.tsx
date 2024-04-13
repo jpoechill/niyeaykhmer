@@ -40,24 +40,33 @@ export default async function Account() {
               </div>
 
 
+
+              {/* <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
+                <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
+              </div> */}
+
               {
                 sections.map((item, index) => (
                   <div key="index" >
                     <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                       {item.title}
                     </div>
-                    {
-                      item.phrases.map((phrase, phraseIndex) => (
-                        <div key="phraseIndex" className="w-full flex justify-center">
-                          <div className="relative w-min">
-                            <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
-                              <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
-                            </div>
-                            {/* <span className="cursor-pointer">{item.khmer}</span> */}
+                    <div className="mt-5 grid grid-cols-1 text-[28px] text-left gap-y-5">
+                      {item.phrases.map((phrase, phraseIndex) => (
+                        <div key="phraseIndex" className="group relative mb-0">
+                          <div className="h-full min-w-[20px] absolute -left-8 pt-[0px] w-full cursor-pointer">
+                            <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden group-hover:inline-block mr-3 pb-1" />
+                          </div>
+                          <span className="cursor-pointer">
+                            {phrase.khmer}
+                          </span>
+                          <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                            {phrase.english}
                           </div>
                         </div>
-                      ))
-                    }
+
+                      ))}
+                    </div>
                   </div>
                 ))
               }
@@ -70,11 +79,12 @@ export default async function Account() {
                   On this page
                 </div>
                 <div className="pl-3 flex flex-col gap-1">
-                  <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Shopping and Dining Out</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Education and Learning</div>
+                  {
+                    sections.map((item, index) => (
+                      <div key="index" className="hover:text-[#428777] cursor-pointer">
+                        {item.title}
+                      </div>
+                    ))}
                 </div>
               </div>
 

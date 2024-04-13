@@ -47,159 +47,25 @@ export default async function Account() {
                     <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
                       {item.title}
                     </div>
-
-
-                    {
-                      // item.title
-                      item.phrases.map((phrase, phraseIndex) => (
-                        <div key="phraseIndex" className="w-full flex justify-center">
-                          <div className="relative w-min">
-                            <div className="h-full min-w-[20px] absolute -left-8 pt-[14px]">
-                              <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
-                            </div>
-                            {/* <span className="cursor-pointer">{item.khmer}</span> */}
+                    <div className="mt-5 grid grid-cols-1 text-[28px] text-left gap-y-5">
+                      {item.phrases.map((phrase, phraseIndex) => (
+                        <div key="phraseIndex" className="group relative mb-0">
+                          <div className="h-full min-w-[20px] absolute -left-8 pt-[0px] w-full cursor-pointer">
+                            <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden group-hover:inline-block mr-3 pb-1" />
+                          </div>
+                          <span className="cursor-pointer">
+                            {phrase.khmer}
+                          </span>
+                          <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
+                            {phrase.english}
                           </div>
                         </div>
-                      ))
-                    }
 
-
+                      ))}
+                    </div>
                   </div>
-
                 ))
               }
-
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Daily Life and Activities
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
-                </div>
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Travel and Tourism
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
-                </div>
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Socializing and Relationships
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
-                </div>
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Shopping and Dining Out
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
-                </div>
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Education and Learning
-              </div>
-              <div className="relative mb-7">
-                {/* <div onClick={() => new Audio('/audio/audio_01.mp3').play()} className="cursor-pointer absolute -left-6 pt-3">&gt;</div> */}
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    ជាធម្មតាខ្ញុំក្រោកពីព្រលឹម ដើម្បីចាប់ផ្តើមថ្ងៃរបស់ខ្ញុំ។
-                  </span><br />
-                </div>
-                <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                  I usually wake up early in the morning to start my day.
-                </div>
-              </div>
-
-              <div className="relative mb-7">
-                <div className="absolute -left-6 pt-3">&gt;</div>
-                <div>
-                  <span className="text-[26px] cursor-pointer">
-                    បន្ទាប់ពីអាហារពេលព្រឹក ខ្ញុំធ្វើដំណើរទៅធ្វើការដោយប្រើប្រាស់មធ្យោបាយធ្វើដំណើរសាធារណៈ។
-                  </span><br />
-                </div>
-                <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
-                  After breakfast, I commute to work using public transportation.
-                </div>
-              </div>
-
 
               {/* Start Side Bar - RIGHT */}
 
