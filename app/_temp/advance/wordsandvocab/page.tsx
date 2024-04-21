@@ -3,7 +3,7 @@ import { createClient } from '@/utils/supabase/server'
 import GetCreds from "@/app/getcreds/getCreds"
 import LeftSideBar from "@/app/components/LeftSideBar";
 
-import sections from './data.json'
+import categories from './data.json'
 
 export default async function Account() {
   const supabase = createClient()
@@ -23,41 +23,38 @@ export default async function Account() {
       <div className="flex justify-between h-screen w-full lg:w-[calc(100%-300px)]">
 
         <GetCreds />
-
         <LeftSideBar></LeftSideBar>
 
         <div className="w-full pl-[300px] h-full top-[60px]">
           <div className="mt-[60px] h-full w-full p-8">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
               <span className="text-xs italic">
-                Intermediate
+                Advance
               </span>
               <div className="text-[1.6rem] font-semibold mb-5">
-                Conversation and Phrases
+                Words and Vocabulary
               </div>
               <div>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </div>
 
-
-
               {
-                sections.map((item, index) => (
+                categories.map((category, index) => (
                   <div key="index" >
                     <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                      {item.title}
+                      {category.name}
                     </div>
-                    <div className="mt-5 grid grid-cols-1 text-[28px] text-left gap-y-5">
-                      {item.phrases.map((phrase, phraseIndex) => (
-                        <div key="phraseIndex" className="group relative mb-0">
-                          <div className="h-full min-w-[20px] absolute -left-8 pt-[0px] w-full cursor-pointer">
+                    <div className="mt-5 grid grid-cols-3 text-[30px] text-center gap-y-5">
+                      {category.words.map((word, wordIndex) => (
+                        <div key="wordIndex" className="group relative mb-0">
+                          <div className="h-full w-[20px] absolute -left-0 pt-[0px] cursor-pointer">
                             <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden group-hover:inline-block mr-3 pb-1" />
                           </div>
                           <span className="cursor-pointer">
-                            {phrase.khmer}
+                            {word.khmer}
                           </span>
                           <div className="font-light  mt-3 text-[14px] text-[#2c3e50]">
-                            {phrase.english}
+                            {word.english}
                           </div>
                         </div>
 
@@ -66,6 +63,23 @@ export default async function Account() {
                   </div>
                 ))
               }
+
+              {/* <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Daily Life and Activities
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Travel and Tourism
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Socializing and Relationships
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Shopping and Dining Out
+              </div>
+              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
+                Education and Learning
+              </div> */}
+
 
               {/* Start Side Bar - RIGHT */}
 

@@ -30,7 +30,7 @@ export default async function Account() {
           <div className="mt-[60px] h-full w-full p-8">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
               <span className="text-xs italic">
-                Advance
+                Intermediate
               </span>
               <div className="text-[1.6rem] font-semibold mb-5">
                 Conversation and Phrases
@@ -41,18 +41,18 @@ export default async function Account() {
 
 
 
-              {/* <div className="z-0 h-full min-w-[20px] absolute -left-8 pt-[10px]">
-                <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden cursor-pointer group-hover:inline-block mr-3 pb-1" />
-              </div> */}
-
               {
                 sections.map((item, index) => (
-                  <div key="index" >
-                    <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                      {item.title}
+                  <div key="index">
+                    <div className="flex text-[1.25rem] flex-row justify-between border-b-[1px] pb-3 border-[#eaecef] mt-10 w-full mb-0">
+                      <div id="numerals" className=" w-full font-semibold ">
+                        {item.title}
+                      </div>
+                      <div className="text-[12px] border px-3 cursor-pointer py-0 flex items-center rounded">Regenerate</div>
                     </div>
                     <div className="mt-5 grid grid-cols-1 text-[28px] text-left gap-y-5">
                       {item.phrases.map((phrase, phraseIndex) => (
+                        phraseIndex < 2 &&
                         <div key="phraseIndex" className="group relative mb-0">
                           <div className="h-full min-w-[20px] absolute -left-8 pt-[0px] w-full cursor-pointer">
                             <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden group-hover:inline-block mr-3 pb-1" />
@@ -71,7 +71,6 @@ export default async function Account() {
                 ))
               }
 
-
               {/* Start Side Bar - RIGHT */}
 
               <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed pt-5 p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
@@ -79,12 +78,11 @@ export default async function Account() {
                   On this page
                 </div>
                 <div className="pl-3 flex flex-col gap-1">
-                  {
-                    sections.map((item, index) => (
-                      <div key="index" className="hover:text-[#428777] cursor-pointer">
-                        {item.title}
-                      </div>
-                    ))}
+                  <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Shopping and Dining Out</div>
+                  <div className="hover:text-[#428777] cursor-pointer">Education and Learning</div>
                 </div>
               </div>
 

@@ -1,0 +1,448 @@
+[
+    [
+        {
+            "category": "news",
+            "title": "News | KhmerTimesKH.com",
+            "phrases": [
+                {
+                    "khmer": "ភ្ញៀវ​ទេសចរ​ទៅលេង​ប្រាសាទ​ព្រះវិហារ​ពេល​ចូលឆ្នាំ​កើន​ជាង ​៣​០ ​ភាគរយ",
+                    "english": "Tourists visit Preah Vihear temple during New Year increased by more than 30%.",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "daily",
+            "title": "Greetings and Introductions",
+            "phrases": [
+                {
+                    "khmer": "សួរស្តាប់, អ្នកបានប្រចាំទេ?",
+                    "english": "Hello, how are you?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ឈ្មោះខ្ញុំគឺ ::",
+                    "english": "My name is :: .",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ស្ដាប់ដំណើរមួយទៀត!",
+                    "english": "Nice to meet you!",
+                    "audio": ""
+                },
+                {
+                    "khmer": "អារម្មណ៍​បន្ទាប់​មក​ / ល្ងាច / អរិយុរ។",
+                    "english": "Good morning/afternoon/evening.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "លាហើយ, នឹងបង្ហាញថ្ងៃក្រោយមក!",
+                    "english": "Goodbye, see you later!",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "travel",
+            "title": "Everyday Conversations",
+            "phrases": [
+                {
+                    "khmer": "ទទួលមកពីយប់មួយរបស់អ្នកមានដូចម្តេច?",
+                    "english": "How is your day going?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "អ្នកធ្វើការនៅដំណើរឬក៏កិច្ចការយ៉ាងណា?",
+                    "english": "What do you do for work/study?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "អ្នកធ្វើការនៅដំណើរឬក៏កិច្ចការយ៉ាងណា?",
+                    "english": "I am from :: .",
+                    "audio": ""
+                },
+                {
+                    "khmer": "សូមអញ្ជើញ, តើអ្នកអាចជួយខ្ញុំបានឬ?",
+                    "english": "Excuse me, can you help me?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "អរគុណច្រើនមែន!",
+                    "english": "Thank you very much!",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "social",
+            "title": "At the Restaurant",
+            "phrases": [
+                {
+                    "khmer": "ខ្ញុំចង់បាន :: ទេ។",
+                    "english": "I would like to order :: .",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកណាក៏ណាជាការណែនាំរបស់អ្នកទេ?",
+                    "english": "What do you recommend?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ញុំអាចទទួលបានវិក័យប័ត្រទេចេញបានទេ?",
+                    "english": "Can I have the bill, please?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ម្ហូបមួយនេះមានរស់រវត្សិរចិត្ត!",
+                    "english": "The food is delicious!",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "shopping",
+            "title": "Shopping",
+            "phrases": [
+                {
+                    "khmer": "តើនេះត្រូវកំណត់ចំណាយប៉ុន្មានទេ?",
+                    "english": "How much does this cost?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកមានមាត្រដាក់/ពណ៌ផ្សេងទៀតឬទេ?",
+                    "english": "Do you have this in a different size/color?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើនេះត្រូវកំណត់ចំណាយប៉ុន្មានទេ?",
+                    "english": "Can I have the bill, please?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកមានមាត្រដាក់/ពណ៌ផ្សេងទៀតឬទេ?",
+                    "english": "Do you have this in a different size/color?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំចង់ទិញ :: ទេ។",
+                    "english": "I would like to buy :: .",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកអាចបញ្ចុះតម្លៃខ្ពស់មកខ្ញុំបានទេ?",
+                    "english": "Could you give me a discount?",
+                    "audio": ""
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "category": "daily",
+            "title": "Weather and Seasons",
+            "phrases": [
+                {
+                    "khmer": "អ្នកនឹងមានពេលវេលាដើម្បីបង្ហាញថាទេសចរិយា?",
+                    "english": "What's the weather like today?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ទេសចរិយាក្នុងមេរោគនេះទៅហើយ។",
+                    "english": "It's raining heavily outside.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំចូលរួមការសម្លាប់ក្នុងរយៈពេលល្ងាច។",
+                    "english": "I love the cool breeze in the evening.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកចូលចិត្តជាងកាត់ដេកឬកម្មង់ខ្លួន?",
+                    "english": "Do you prefer summer or winter?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "នេះមើលទៅមានពិសេសណាគឺថ្ងៃចុងក្រោយដល់កន្លែងដែលមានទាំងស្រុង។",
+                    "english": "Let's go for a walk in the park.",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "travel",
+            "title": "Transportation and Directions",
+            "phrases": [
+                {
+                    "khmer": "តើខ្ញុំអាចទទួលបានដើម្បីធ្វើដំណើរទៅក្នុងអាកាសម្រេចពីទីនេះ?",
+                    "english": "How can I get to the airport from here?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "សូមសង្ឃឹម, ទទួលសុវត្ថិភាពនៅតាមចំណងជើងប្រសិនបើអ្នកនេះ។",
+                    "english": "Excuse me, where is the nearest bus stop?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកអាចចូលចិត្តឲ្យប្រើការដើរទៅផ្លូវសណ្ឋាគារបានទេ?",
+                    "english": "Could you please give me directions to the train station?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើមានការចាប់ពីព្រឹត្តិការណ៍ស្តុកដើម្បីជួបពួកគេទេ?",
+                    "english": "Is there a taxi stand around here?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំត្រូវការធ្វើការប្រសើរពីការចូលចិត្តបំផុត។",
+                    "english": "I'm looking for the subway entrance.",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "social",
+            "title": "Hobbies and Interests",
+            "phrases": [
+                {
+                    "khmer": "តើអ្នកចូលចិត្តឲ្យធ្វើអ្វីក្នុងពេលទេសចរិយា?",
+                    "english": "What do you like to do in your free time?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំចូលចិត្តទៅកាន់ការអានសៀវភៅនិងកាសែតភាពវត្ថុ។",
+                    "english": "I enjoy reading books and listening to music.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកបានឃើញនូវការគួរសារមួយឬទទួលបានដែរទេ?",
+                    "english": "Have you ever tried painting or drawing?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ចូលចិត្តទៅរស់នៅទីស្នាក់នេះទើបចូលចិត្តកំពុងសម្រេច។",
+                    "english": "Let's go for a hike this weekend.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំគិតថាខ្ញុំចូលចិត្តធ្វើការមួយក្នុងក្រុមអាហារទេពងទៅ។",
+                    "english": "I'm thinking of joining a cooking class.",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "shopping",
+            "title": "Clothing and Fashion",
+            "phrases": [
+                {
+                    "khmer": "តើអ្នកដឹងថាតើខ្ញុំអាចរកឃ្លោកនៅក្នុងស្រុកនេះបានទេ?",
+                    "english": "Do you know where I can find jeans in this mall?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំត្រូវការទទួលបានហាងប្រសើរជាមួយសំណើចសម្រាប់រង្វាស់។",
+                    "english": "I need to buy a new pair of shoes for the party.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ការនេះទាក់ទងពិសេសដល់អ្នក!",
+                    "english": "This dress looks great on you!",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំត្រូវការរស់នៅបន្ទប់សម្រាប់ការជួយពិតប្រាកដទេពង។",
+                    "english": "I'm looking for a formal outfit for an interview.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តាមបណ្តាញអ៊ីនធឺណិតជាក់ស្តែងបំផុតទំនិញគំរូថ្មី។",
+                    "english": "Let's check out the latest fashion trends online.",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "category": "education",
+            "title": "Learning a New Language",
+            "phrases": [
+                {
+                    "khmer": "តើអ្នកដឹងថាតើមានអ្វីប្រចាំទុកនៅក្នុងភាសាអេស្បួប?",
+                    "english": "How do you say 'hello' in Spanish?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ខ្ញុំកំពុងចាប់ប្រើភាសាបារាំងរបស់ខ្ញុំ។",
+                    "english": "I'm practicing my French pronunciation.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកចង់មើលម៉ូឌុលពាក់កណ្តាលរបស់ការបង្រៀនពីម្សិលមិញទេ?",
+                    "english": "Let's review the vocabulary from yesterday's lesson.",
+                    "audio": ""
+                },
+                {
+                    "khmer": "តើអ្នកចង់ចូលរួមនៅក្នុងក្រុមប្រឹក្សាភាសារបស់ខ្ញុំទេ?",
+                    "english": "Do you want to join a language exchange group?",
+                    "audio": ""
+                },
+                {
+                    "khmer": "ការមើលរឿងនៅក្នុងភាសាដែលកន្លែងនេះជាជំនួយដល់ការរៀនប្រើ។",
+                    "english": "Watching movies in the target language helps with learning.",
+                    "audio": ""
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "title": "Philosophical Discussions",
+            "phrases": [
+                {
+                    "english": "Let's delve into the nature of reality and how we perceive it.",
+                    "khmer": "តើយើងចូលចិត្តទៅក្នុងគ្រឹះស្ថាននិងទិន្នន័យដែរឬទេ?",
+                    "audio": ""
+                },
+                {
+                    "english": "I find the concept of free will versus determinism quite intriguing.",
+                    "khmer": "ខ្ញុំឃើញប្រភេទនៃការមិនទាន់ផ្តល់រូបមន្តនិងអន្តរក្នុងការបញ្ចូលប្រឆាំងដោយត្រិស្តភាគច្រើន។",
+                    "audio": ""
+                },
+                {
+                    "english": "Have you ever contemplated the pursuit of happiness from a philosophical standpoint?",
+                    "khmer": "តើអ្នកដឹងចំលើយបានទេការស្របតាមទិសនានិងសិរីស្ទេនការប្រកួតចំពោះការរីករាយមួយដែរឬទេ?",
+                    "audio": ""
+                },
+                {
+                    "english": "It's fascinating to explore the connections between morality and religion.",
+                    "khmer": "ការស្រលាញគ្នារវាងភាពសំដីនិងសារពលរឿងដើម្បីធ្វើឱ្យទាន់សម័យ។",
+                    "audio": ""
+                },
+                {
+                    "english": "We could discuss existentialist themes like identity and purpose for hours.",
+                    "khmer": "យើងអាចពិភាក្សាបានលឿនបំផុតអំពីបទបញ្ចូលស្រ្តីដូចជាការសង្ឃឹមនិងគោលដៅរបស់វា។",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "title": "Current Events and Global Issues",
+            "phrases": [
+                {
+                    "english": "I'm interested in your take on recent climate change initiatives.",
+                    "khmer": "ខ្ញុំចូលចិត្តក្នុងការទទួលយកនូវប្រាសាទរបស់អ្នកលើការដោះស្រាយនៅលើប្រទេសនៅពេលថ្ងៃកណ្តាលសហរដ្ឋអាមេរិក។",
+                    "audio": ""
+                },
+                {
+                    "english": "Social media seems to have a significant impact on shaping political discourse, don't you think?",
+                    "khmer": "ទូទៅសិទ្ធិមានទំនាក់ទំនងជាមួយបញ្ហាអត្ថបទនិងបច្ចេកវិទ្យាសង្ខេបរបស់ប្រធានប្រជាធិបតេយ្យដែលអ្នកគិតថា?",
+                    "audio": ""
+                },
+                {
+                    "english": "Globalization brings both benefits and challenges to developing nations.",
+                    "khmer": "ការបរិភោគមិនមែនជាវិធីសាស្រ្តបែបប្រមូលផ្តុំទីតាំងជាតិសម្រាប់ប្រទេសដែលកំពុងបង្កើតផ្ទៃខាងលិចទៅតាមការគ្រប់គ្រង។",
+                    "audio": ""
+                },
+                {
+                    "english": "Addressing systemic racism and promoting social justice are crucial in today's world.",
+                    "khmer": "ការដោះស្រាយការប្រឆាំងប្រយ័ត្ននិងការគាំទ្រសង្គ្រោះជាតិសូម្បីគាំទ្រសង្គ្រោះជាតិជាក់លាក់នៅក្នុងពិភពលោកនៅថ្ងៃនេះ។",
+                    "audio": ""
+                },
+                {
+                    "english": "Balancing economic growth with environmental sustainability is a complex task.",
+                    "khmer": "ការសម្តែងតែងតាំងនិងការសង្គ្រោះទាហានពីប្រទេសកំពុងត្រូវបានសមរម្យជាក់លាក់។",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "title": "Literary Analysis and Critique",
+            "phrases": [
+                {
+                    "english": "Let's analyze the symbolism of the river in 'Heart of Darkness.'",
+                    "khmer": "ទាញយកការវាយតម្លៃរូបភាពនៃទីនេះក្នុងការនិពន្ធរឿងទីនេះរបស់ចំណងជើងគោលបក្សខ្លះ។",
+                    "audio": ""
+                },
+                {
+                    "english": "The stream-of-consciousness narration in 'Ulysses' offers unique insights into the protagonist's psyche.",
+                    "khmer": "ការនិពន្ធគិតលើស្ថានភាពប្រវែងពីខួរបញ្ជានៃរឿងទីនេះផ្ដោតពីគោលនយោបាយស្រដៀងនៃនិយាយរបស់នាយឧត្តម។",
+                    "audio": ""
+                },
+                {
+                    "english": "Magical realism adds depth to social and political commentary in Latin American literature.",
+                    "khmer": "ការស្តេចស្តាយភាពពេញនិយមគ្នាទៅកាន់ការវាយតម្លៃសង្ខាងទីនេះក្នុងអត្ថបទនៃសិល្បៈអាមេរិក។",
+                    "audio": ""
+                },
+                {
+                    "english": "The author's choice of setting greatly influences the mood and atmosphere of the novel.",
+                    "khmer": "ការជ្រើសរើសទីកន្លែងនៃរឿងចិត្តមិនតែផ្ដល់បញ្ហាល្បីរបស់រឿងទេព្រោះវាក៏ជួបប្រយោជន៍នៃបញ្ហារបស់រឿង។",
+                    "audio": ""
+                },
+                {
+                    "english": "We can draw intriguing parallels between characters in 'The Great Gatsby' and the Roaring Twenties.",
+                    "khmer": "យើងអាចគូររឿងគូររឿងមានស្ថានភាពរួមរួមនៅក្នុងរឿងនេះនិងព្រឺតិនៅឆ្នាំទីពីរដែលទទួលបានការពិពណ៌នាទាំងនៅតំបន់និវត្តន៍ចន្លោះ។",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "title": "Cultural Exchange and Traditions",
+            "phrases": [
+                {
+                    "english": "Could you share a cultural tradition or celebration from your country?",
+                    "khmer": "តើអ្នកអាចចែកចាយប្រសិទ្ធិនិងការទិញចូលពីប្រទេសរបស់អ្នកដែរឬទេ?",
+                    "audio": ""
+                },
+                {
+                    "english": "I'm fascinated by the diversity of family dynamics across different cultures.",
+                    "khmer": "ខ្ញុំឃើញការចូលចិត្តក្នុងបរិស្ថានសកម្មគ្រប់គ្រងគ្នារវាងភាពរបស់គ្រួសារទាក់ទងច្រើនប្រទេសដូចគ្នា។",
+                    "audio": ""
+                },
+                {
+                    "english": "It's important to preserve cultural heritage in the face of globalization.",
+                    "khmer": "ការសង្គ្រោះបច្ចុប្បន្នបរិស្ថានសម្រាប់កសិកម្មពីប្រទេសក្នុងព្រឹត្តិការណ៍។",
+                    "audio": ""
+                },
+                {
+                    "english": "Traditions surrounding food often reveal a lot about a culture's values and history.",
+                    "khmer": "គោលដៅបរិស្ថានដែលមានសមត្ថភាពលើអាហារមែនទេចេញពីជាតិរបស់គ្រួសារនិងប្រវត្តិនិងប្រវត្តិនិងប្រវត្តិនិងប្រវត្តិ។",
+                    "audio": ""
+                },
+                {
+                    "english": "Let's explore the similarities and differences between our cultural customs.",
+                    "khmer": "តាមដានការដឹកនាំនិងភាពស្មោះគ្នារវាងការស្រឡាញ់គោលដៅស្របគ្នារបស់យើង។",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "title": "Learning a New Language",
+            "phrases": [
+                {
+                    "english": "Practice is key when it comes to mastering a new language.",
+                    "khmer": "ការប្រាកដជាការគោរពជំនឿននៅពេលដែលការដោះស្រាយការនិយាយភាសាថ្មី។",
+                    "audio": ""
+                },
+                {
+                    "english": "Listening to native speakers helps improve pronunciation and fluency.",
+                    "khmer": "ការស្ដាប់ទៅភាសាប្រចាំខ្មែរជាមួយសំលេងអត្ថបទជួបបទប្រចាំខ្មែរជាមួយមាតាប្រចាំខ្មែរ។",
+                    "audio": ""
+                },
+                {
+                    "english": "Reading newspapers and books in the target language aids comprehension.",
+                    "khmer": "ការអានព្រាថ្នាប់និងសៀវភៅនៅក្នុងភាសាដែលបានគេជ្រើសរើសជួបបទេពីសាសនា។",
+                    "audio": ""
+                },
+                {
+                    "english": "Watching movies with subtitles is a fun way to learn colloquial expressions.",
+                    "khmer": "ការមើលរឿងជាមួយនិងប្រចាំប្រភេទមានស្ថានភាពគីឡូក្រមរឿងគឺជាវិធីសាស្រ្តដែលប្រសើរស្មើគ្នា។",
+                    "audio": ""
+                },
+                {
+                    "english": "Joining language exchange groups can provide valuable opportunities for practice.",
+                    "khmer": "ការចូលរួមក្នុងក្រុមគំនិតភាសាអាហារអាហារជួបបទអាហារជួបបទមានសមត្ថភាពអំពីការច្រៀង។",
+                    "audio": ""
+                }
+            ]
+        }
+    ]
+]

@@ -23,13 +23,14 @@ export default async function Account() {
       <div className="flex justify-between h-screen w-full lg:w-[calc(100%-300px)]">
 
         <GetCreds />
+
         <LeftSideBar></LeftSideBar>
 
         <div className="w-full pl-[300px] h-full top-[60px]">
           <div className="mt-[60px] h-full w-full p-8">
             <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
               <span className="text-xs italic">
-                Advance
+                Intermediate
               </span>
               <div className="text-[1.6rem] font-semibold mb-5">
                 Words and Vocabulary
@@ -38,16 +39,18 @@ export default async function Account() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </div>
 
-
               {
                 categories.map((category, index) => (
-                  <div key="index" >
-                    <div id="numerals" className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                      {category.name}
+                  index < 1 && <div key="index" >
+                    <div className="flex text-[1.25rem] flex-row justify-between border-b-[1px] pb-3 border-[#eaecef] mt-10 w-full mb-0">
+                      <div id="numerals" className=" w-full font-semibold ">
+                        {category.name}
+                      </div>
+                      <div className="text-[12px] border px-3 cursor-pointer py-0 flex items-center rounded">Regenerate</div>
                     </div>
-                    <div className="mt-5 grid grid-cols-3 text-[30px] justify-center text-center gap-y-5">
+                    <div className="mt-5 grid grid-cols-3 text-[30px] text-center gap-y-5">
                       {category.words.map((word, wordIndex) => (
-                        <div key="wordIndex" className="group flex-col overflow-hidden justify-center relative mb-0">
+                        <div key="wordIndex" className="group relative mb-0">
                           <div className="h-full w-[20px] absolute -left-0 pt-[0px] cursor-pointer">
                             <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="hidden group-hover:inline-block mr-3 pb-1" />
                           </div>
@@ -64,23 +67,6 @@ export default async function Account() {
                   </div>
                 ))
               }
-
-              {/* <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Daily Life and Activities
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Travel and Tourism
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Socializing and Relationships
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Shopping and Dining Out
-              </div>
-              <div className="text-[1.25rem] pb-[.3rem] mt-10 font-semibold mb-5 border-b-[1px] border-[#eaecef]">
-                Education and Learning
-              </div> */}
-
 
               {/* Start Side Bar - RIGHT */}
 

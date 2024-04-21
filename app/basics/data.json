@@ -1,7 +1,8 @@
-{
-    "vowels": {
+[
+    {
+        "category": "vowels",
         "title": "Vowels",
-        "chars": [
+        "phrases": [
             {
                 "khmer": "ក្ក",
                 "audio": ""
@@ -131,14 +132,15 @@
                 "audio": ""
             },
             {
-                "khmer": "",
+                "khmer": "អ",
                 "audio": ""
             }
         ]
     },
-    "consonants": {
+    {
+        "category": "consonants",
         "title": "Consonants",
-        "chars": [
+        "phrases": [
             {
                 "khmer": "កា",
                 "audio": ""
@@ -233,9 +235,10 @@
             }
         ]
     },
-    "special": {
+    {
+        "category": "special",
         "title": "Special Characters",
-        "chars": [
+        "phrases": [
             {
                 "khmer": "ឥ",
                 "audio": ""
@@ -274,50 +277,50 @@
             }
         ]
     },
-
-    "numbers": {
+    {
+        "category": "numbers",
         "title": "Numbers",
-        "chars": [
-                {
-                    "khmer": "០",
-                    "audio": ""
-                },
-                {
-                    "khmer": "១",
-                    "audio": ""
-                },
-                {
-                    "khmer": "២",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៣",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៤",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៥",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៦",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៧",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៨",
-                    "audio": ""
-                },
-                {
-                    "khmer": "៩",
-                    "audio": ""
-                }
+        "phrases": [
+            {
+                "khmer": "០",
+                "audio": ""
+            },
+            {
+                "khmer": "១",
+                "audio": ""
+            },
+            {
+                "khmer": "២",
+                "audio": ""
+            },
+            {
+                "khmer": "៣",
+                "audio": ""
+            },
+            {
+                "khmer": "៤",
+                "audio": ""
+            },
+            {
+                "khmer": "៥",
+                "audio": ""
+            },
+            {
+                "khmer": "៦",
+                "audio": ""
+            },
+            {
+                "khmer": "៧",
+                "audio": ""
+            },
+            {
+                "khmer": "៨",
+                "audio": ""
+            },
+            {
+                "khmer": "៩",
+                "audio": ""
+            }
         ]
     }
-}
+]
