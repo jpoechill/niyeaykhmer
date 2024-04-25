@@ -4,98 +4,120 @@ import { useCallback, useEffect, useState } from 'react'
 import RightSideBar from "@/app/components/RightSideBar";
 import allData from './data.json'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function App() {
   let [toggleEnglish, setToggleEnglish] = useState(false)
   let [currSection, setCurrentSection] = useState(0)
   let [currPhrase, setCurrPhrase] = useState(0)
   let sections = allData
+  let [toggleModal, setToggleModal] = useState(false)
+
 
   const goToNextPhrase = () => {
     let prevPhrase = currPhrase
     let newSection = Math.floor(Math.random() * sections.length)
-    let newPhrase = Math.floor(Math.random() * sections[newSection].phrases.length)
+    let newPhrase = Math.floor(Math.random() * sections[0].phrases.length)
 
     console.log(newSection, newPhrase)
     if (prevPhrase === newPhrase) {
       goToNextPhrase()
     } else {
-      setCurrentSection(newSection)
+      // setCurrentSection(newSection)
       setCurrPhrase(newPhrase)
     }
+
   }
 
+
   return (
-    <div className="w-full pl-[300px] flex dark:bg-[#222]  h-full">
-      <div className="mt-[60px] w-full p-4">
-        <div className="text-[#2c3e50] dark:text-white text-center px-10 pb-0 text-[14px]">
-          <div className=" flex flex-row justify-between px-4 rounded-xl pb-0 mt-o ">
-            <div className="w-min h-full">
-              <div className="border text-md font-bold px-2 py-1 rounded inline cursor-pointer" onClick={() => setCurrPhrase(currPhrase == 0 ? sections[currSection].phrases.length - 1 : currPhrase - 1)}>←</div>
+
+    <div className="w-full ml-[310px] mt-[60px]  relative flex dark:bg-[#222] px-0 h-[calc(100%-60px)] ">
+
+      <div className={(toggleModal ? '' : 'hidden') + ' w-[calc(100%-620px)] h-[calc(100%-60px)] bg-white fixed flex-col justify-center z-[1]'}>
+        <div className="w-full flex py-[50px] items-center justify-center h-full border-b-[1px]">
+          <div className="h-full w-full p-[40px] bg-[#fdfdfd]">
+            {/* bg-[#fdfdfd] */}
+            <div className="flex relative flex-col shadow-md border font-light bg-white rounded-xl w-full h-full p-10 justify-center items-center text-[60px] text-center">
+              <div>
+                {sections[currSection].phrases[currPhrase].khmer}
+                {/* កម្ពុជា​នឹង​សហការ​ជាមួយ​ឥណ្ឌា​ក្នុង​ការ​អភិវឌ្ឍ​ធនធានមនុស្ស​ក្នុង​វិ​ស័​យ​មុខងារ​សាធារណៈ */}
+              </div>
+              <div className="font-light mt-3 text-[14px] text-[#2c3e50]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quae!
+              </div>
+              <div onClick={() => setToggleModal(false)} className="absolute top-0 right-0 p-5">
+                {/* <Link href="/advance"> */}
+                <Image src="/x.png" width={15} height={15} alt="REAN KHMER" className="cursor-pointer" />
+                {/* </Link> */}
+              </div>
+              {/* <div className="absolute bottom-0 left-0 p-5">
+        <Image src="/play_btn_cr.svg" width={30} height={30} alt="REAN KHMER" className="cursor-pointer" />
+      </div> */}
             </div>
-            <div>
-              <div className="mt-0 grid grid-cols-1 text-[54px] px-0">
-                <div className="group w-full relative flex flex-col justify-center px-[10px] mb-0">
-                  <div className="cursor-pointer w-full flex flex-col px-8 rounded-xl mb-5">
-                    <div className={(toggleEnglish === true ? 'opacity-100 ' : 'opacity-100 ') + " transition-all w-full text-[#555] dark:text-white flex justify-center text-sm gap-5"}>
-                      <span>
-                        {sections[currSection].title}
-                      </span>
-                    </div>
-                    <div onClick={() => setToggleEnglish(!toggleEnglish)}>
-                      {sections[currSection].phrases[currPhrase].khmer}
-                    </div>
-                    <div className="font-light text-center w-full mt-0 text-[14px] text-[#2c3e50] dark:text-white">
-                      <div className="justify-center w-full">
-                        <div className="flex justify-center flex-1">
-                          <div className={(toggleEnglish === true ? 'opacity-100 translate-y-0 ' : 'opacity-100 translate-y-3') + " transition-all ease-in-out duration-800 pl-2"}>
-                            {sections[currSection].phrases[currPhrase].english}
-                          </div>
-                        </div>
+
+            {/* <div className="w-full mb-0 pt-6 flex items-center justify-between border-t-[0px] px-0">
+              <div>
+                <Image src="/play_btn_cr.svg" width={30} height={30} alt="REAN KHMER" className="cursor-pointer" />
+              </div>
+              <div className='text-sm flex gap-3 items-center'>
+                <div className="border px-2 py-1 rounded inline cursor-pointer">Shuffle in Level</div>
+                <div className="border px-2 py-1 rounded inline cursor-pointer" >Shuffle in Category</div>
+                <div className="border px-2 py-1 rounded inline cursor-pointer">→</div>
+              </div>
+            </div> */}
+
+          </div>
+        </div>
+      </div>
+
+
+      <div className='w-[calc(100%-620px)] fixed flex flex-col pt-[60px] top-0 justify-end bg-[white] h-min z-[1]'>
+        <div className="w-full py-4 flex items-center justify-between border-b-[1px] px-10">
+          <div className="text-[1.25rem] font-semibold">
+            Literary Analysis and Critique
+
+          </div>
+        </div>
+      </div>
+
+      <div className=' w-[calc(100%-620px)]  fixed flex flex-col bottom-0 justify-end bg-[white] h-min z-[1]'>
+        <div className="w-full mb-0 py-4 flex items-center justify-between border-t-[1px] px-10">
+          <div>
+            <Image src="/play_btn_cr.svg" width={30} height={30} alt="REAN KHMER" className="cursor-pointer" />
+          </div>
+          <div className='text-sm flex gap-3 items-center'>
+            <div className="border px-2 py-1 rounded inline cursor-pointer">Shuffle All</div>
+            <div className="border px-2 py-1 rounded inline cursor-pointer" >Shuffle in Category</div>
+            <div onClick={() => { goToNextPhrase() }} className="border px-2 py-1 rounded inline cursor-pointer">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div className={(toggleModal ? 'hidden' : '') + ' w-full pt-[16px]'}>
+        <div className='p-0 mt-[10px] w-full pb-[20px] z-0'>
+          {
+            sections.map((section, sectionIndex) =>
+              <div key={sectionIndex}>
+                <div id="vowels" className={(sectionIndex !== 0 ? 'border-b-[1px]' : '') + " px-10 text-left text-[1.25rem] pb-[.3rem] pt-0 font-semibold border-[#eaecef]"}>
+                  {sectionIndex !== 0 ? section.title : <div>&nbsp;</div>}
+                </div>
+                <div className="mt-5 px-10 grid grid-cols-1 w-full text-center mb-10">
+                  {section.phrases.map((phrase, phraseIndex) => (
+                    <div key={phraseIndex} className="text-[35px] w-full flex-col justify-center">
+                      <div onClick={() => setToggleModal(true)} className="relative w-full hover:text-[#428777] text-left mb-5">
+                        <span className="cursor-pointer">{phrase.khmer}</span>
                       </div>
                     </div>
-                    <audio controls className="w-full min-w-[500px] mt-4 mb-3">
-                      <source src="/audio_01.mp3" type="audio/mpeg" />
-                      Your browser does not support the audio element.
-                    </audio>
-
-                  </div>
+                  ))}
+                  <div className="border px-2 py-1 w-min text-sm text-nowrap rounded inline cursor-pointer">More...</div>
                 </div>
               </div>
-            </div>
-            <div className="w-min h-full">
-              <div className="border text-xs px-2 py-1 rounded inline cursor-pointer" onClick={() => goToNextPhrase()}>→</div>
-            </div>
-          </div>
-
-          <div className='pb-[40px]'>
-            {
-              sections.map((section, sectionIndex) =>
-                <div key={sectionIndex}>
-                  <div id="vowels" className="text-[1.25rem] pb-[.3rem] pt-0 font-semibold border-b-[1px] border-[#eaecef]">
-                    {section.title}
-                  </div>
-                  <div className="mt-5 grid grid-cols-1 text-[30px] text-left gap-y-5 mb-10">
-                    {section.phrases.map((phrase, phraseIndex) => (
-                      <div key={phraseIndex} className="w-full flex justify-center">
-                        <div className="relative w-full text-left">
-                          <div className="h-full min-w-[20px] w-full absolute -left-8 pt-[14px]">
-                            <Image src="/play_btn_cr.svg" width={20} height={20} alt="REAN KHMER" className="cursor-pointer group-hover:inline-block mr-3 pb-1" />
-                          </div>
-                          <span className="cursor-pointer">{phrase.khmer}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )
-            }
-          </div>
-          <div className={"opacity-100 bg-white dark:bg-[#222] dark:text-white transition-opacity ease-in-out text-left top-[60px] fixed w-[300px] lg:block right-0 z-1 pl-9 pt-5 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
-            <RightSideBar />
-          </div>
-        </div >
+            )
+          }
+        </div>
       </div>
     </div>
+
   );
 }

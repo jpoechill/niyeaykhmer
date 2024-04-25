@@ -16,10 +16,26 @@ export default function LeftSideBar() {
                 </div>
             </div>
             <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">About</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">Support</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">Resources</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">Contact</Link> </div>
+                <Link href="/etc#special">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        About
+                    </div>
+                </Link>
+                <Link href="/etc#special">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Support
+                    </div>
+                </Link>
+                <Link href="/etc#special">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Resources
+                    </div>
+                </Link>
+                <Link href="/etc#special">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Contact
+                    </div>
+                </Link>
             </div>
         </div>
     );

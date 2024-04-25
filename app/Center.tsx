@@ -16,7 +16,6 @@ export default function App() {
   let [currSection, setCurrentSection] = useState(0)
   let [currPhrase, setCurrPhrase] = useState(0)
   let [currLevel, setCurrLevels] = useState(1)
-  let [currSections, setCurrentSections] = useState(0)
 
   let [mouseMoving, setMouseMoving] = useState(true)
 
@@ -195,54 +194,8 @@ export default function App() {
           <div className="border text-xs px-2 py-1 rounded inline cursor-pointer" onClick={() => goToNextPhrase()}>→</div>
         </div>
       </div>
-
-      {/* Start Side Bar - RIGHT */}
-      {/* mouseMoving ? "group-hover/all:opacity-100 " : " " + " */}
-
       <div className={(mouseMoving ? "group-hover/all:opacity-100 " : '') + " opacity-100 bg-white dark:bg-[#222] dark:text-white transition-opacity ease-in-out text-left top-[60px] fixed w-[300px] lg:block right-0 z-1 pl-9 pt-5 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
         <RightSideBar />
-        {/* <div className='mt-1'>
-          {
-            (pathname[1] === '' ? <Image src="/avatars/basics_avatar_02.jpg" width={400} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" /> : '')
-          }
-          {
-            (pathname[1] === 'basics' ? <Image src="/avatars/basics_avatar_02.jpg" width={400} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" /> : '')
-          }
-          {
-            (pathname[1] === 'beginner' ? <Image src="/mother.jpg" width={400} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" /> : '')
-          }
-          {
-            (pathname[1] === 'intermediate' ? <Image src="/mother.jpg" width={400} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" /> : '')
-          }
-          {
-            (pathname[1] === 'advance' ? <Image src="/mother.jpg" width={400} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" /> : '')
-          }
-        </div> */}
-        {/* <div className="relative">
-          <div className="-left-3 font-semibold mt-1 mb-1">
-            Info
-          </div>
-        </div>
-        <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
-          <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">About</Link> </div>
-          <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">Support</Link> </div>
-          <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">Resources</Link> </div>
-          <div className="hover:text-[#428777] cursor-pointer"><Link href="/etc#special">Contact</Link> </div>
-
-        </div> */}
-        {/* <div className="relative">
-          <div className="-left-3 font-semibold mt-3 mb-1">
-            Categories and Topics
-          </div>
-        </div>
-        <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
-          <div className="hover:text-[#428777] cursor-pointer">Daily Life and Activities</div>
-          <div className="hover:text-[#428777] cursor-pointer">Travel and Tourism</div>
-          <div className="hover:text-[#428777] cursor-pointer">Socializing and Relationships</div>
-          <div className="hover:text-[#428777] cursor-pointer">Shopping and Dining Out</div>
-          <div className="hover:text-[#428777] cursor-pointer">Education and Learning</div>
-        </div> */}
-
       </div>
 
     </div >

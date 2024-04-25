@@ -37,7 +37,7 @@ export default function LeftSideBar() {
     const pathname = usePathname().split('/')
 
     return (
-        <div className={(mouseMoving ? "group-hover/all:opacity-100" : "") + " dark:bg-[#222] dark:text-white opacity-100 transition-opacity ease-in-out top-[60px] fixed w-[300px] pl-9 pt-3 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
+        <div className={(mouseMoving ? "group-hover/all:opacity-100" : "") + " dark:bg-[#222] border-r-[1px] dark:text-white opacity-100 transition-opacity ease-in-out top-[60px] fixed w-[310px] pl-9 pt-3 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
 
             {/* <div className='mt-3'>
 
@@ -62,23 +62,60 @@ export default function LeftSideBar() {
                 Trainer
             </div>
             <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/basics">Basics</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/beginner">Beginner</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/">Intermediate</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/">Advance</Link> </div>
+                <Link href="/basics">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Basics
+                    </div>
+                </Link>
+                <Link href="/beginner">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Beginner
+                    </div>
+                </Link>
+                <Link href="/intermediate">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Intermediate
+                    </div>
+                </Link>
+                <Link href="/advance">
+                    <div className="hover:text-[#428777] cursor-pointer">
+                        Advance
+                    </div>
+                </Link>
+            </div>
+            <div>
+                <div className="relative">
+                    <div className="-left-3 font-semibold mt-1 mb-1">
+                        Info
+                    </div>
+                </div>
+                <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
+                    <Link href="/etc#special">
+                        <div className="hover:text-[#428777] cursor-pointer">
+                            About
+                        </div>
+                    </Link>
+                    <Link href="/etc#special">
+                        <div className="hover:text-[#428777] cursor-pointer">
+                            Support
+                        </div>
+                    </Link>
+                    <Link href="/etc#special">
+                        <div className="hover:text-[#428777] cursor-pointer">
+                            Resources
+                        </div>
+                    </Link>
+                    <Link href="/etc#special">
+                        <div className="hover:text-[#428777] cursor-pointer">
+                            Contact
+                        </div>
+                    </Link>
+                </div>
             </div>
 
-
-            <div className="font-semibold text-[14px] mt-3 mb-1">
-                Info
-            </div>
-            <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/basics">About</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/beginner">Support</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/">Resources</Link> </div>
-                <div className="hover:text-[#428777] cursor-pointer"><Link href="/">contact</Link> </div>
-            </div>
-
+            {/* <div>
+                <Image src="/avatars/bear.png" width={400} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" />
+            </div> */}
 
             {/* <div className="relative">
                 <div className="-left-3 mt-3 font-semibold mb-1">
