@@ -40,6 +40,10 @@ export default function App() {
             {/* bg-[#fdfdfd] */}
             <div className="flex relative flex-col shadow-md border font-light bg-white rounded-xl w-full h-full p-10 justify-center items-center text-[60px] text-center">
               <div>
+                <Image src="/thumbnails/sample.png" width={100} height={100} alt="REAN KHMER" className="cursor-pointer pb-10" />
+
+              </div>
+              <div>
                 {sections[currSection].phrases[currPhrase].khmer}
                 {/* កម្ពុជា​នឹង​សហការ​ជាមួយ​ឥណ្ឌា​ក្នុង​ការ​អភិវឌ្ឍ​ធនធានមនុស្ស​ក្នុង​វិ​ស័​យ​មុខងារ​សាធារណៈ */}
               </div>
@@ -47,26 +51,9 @@ export default function App() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quae!
               </div>
               <div onClick={() => setToggleModal(false)} className="absolute top-0 right-0 p-5">
-                {/* <Link href="/advance"> */}
                 <Image src="/x.png" width={15} height={15} alt="REAN KHMER" className="cursor-pointer" />
-                {/* </Link> */}
               </div>
-              {/* <div className="absolute bottom-0 left-0 p-5">
-        <Image src="/play_btn_cr.svg" width={30} height={30} alt="REAN KHMER" className="cursor-pointer" />
-      </div> */}
             </div>
-
-            {/* <div className="w-full mb-0 pt-6 flex items-center justify-between border-t-[0px] px-0">
-              <div>
-                <Image src="/play_btn_cr.svg" width={30} height={30} alt="REAN KHMER" className="cursor-pointer" />
-              </div>
-              <div className='text-sm flex gap-3 items-center'>
-                <div className="border px-2 py-1 rounded inline cursor-pointer">Shuffle in Level</div>
-                <div className="border px-2 py-1 rounded inline cursor-pointer" >Shuffle in Category</div>
-                <div className="border px-2 py-1 rounded inline cursor-pointer">→</div>
-              </div>
-            </div> */}
-
           </div>
         </div>
       </div>
@@ -76,7 +63,6 @@ export default function App() {
         <div className="w-full py-4 flex items-center justify-between border-b-[1px] px-10">
           <div className="text-[1.25rem] font-semibold">
             Literary Analysis and Critique
-
           </div>
         </div>
       </div>
