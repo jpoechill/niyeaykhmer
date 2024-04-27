@@ -41,21 +41,13 @@ export default async function Account() {
                 About
               </div>
               <div>
-                Welcome to our Khmer Language Trainer powered by Next.js! Our platform boasts a strong, minimal design ethos, ensuring a seamless learning experience. Dive into our extensive library of words and phrases curated for various contexts, from everyday conversations to specialized topics. With intuitive navigation, you can practice at your own pace, honing your Khmer skills effortlessly.
-                {/* <br /><br /> */}
-                {/* Whether you're a beginner or aiming for fluency, our Khmer Language Trainer is your gateway to mastering the language efficiently and effectively. Start your journey today and unlock a world of opportunities with Khmer proficiency at your fingertips! */}
+                A Khmer language trainer and quick reference site.
               </div>
-
-
               <div id="vowels" className="mt-5 text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] mb-3 border-[#eaecef]">
                 Support
               </div>
               <div>
-                Every donation, no matter how small, helps us continue our mission of promoting language diversity and cultural understanding. Together, we can empower individuals to connect with the Khmer language and culture on a deeper level.
-                <br /><br />
-                Thank you for considering supporting us in our journey to make language learning accessible to all.
-                {/* Donate now and make a difference in the lives of language learners everywhere! */}
-
+                Let us know that we should keep working on this!
               </div>
 
               <div id="vowels" className="mt-5 text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] mb-3 border-[#eaecef]">
@@ -90,19 +82,10 @@ export default async function Account() {
 
               <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed pt-5 p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
                 <RightSideBar />
-                {/* <div className="font-semibold mb-1">
-                  On this page
-                </div>
-                <div className="pl-3 flex flex-col gap-1">
-                  <div className="hover:text-[#428777] cursor-pointer">About</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Donate</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Resources</div>
-                  <div className="hover:text-[#428777] cursor-pointer">Contact</div>
-                </div> */}
               </div>
 
 
-              <div className="text-xs font-extralight text-right block pt-12 pb-3">
+              {/* <div className="text-xs font-extralight text-right block pt-12 pb-3">
                 Last updated: 01/01/24
               </div>
               <div >
@@ -115,7 +98,7 @@ export default async function Account() {
                 <div>
                   Next →
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
