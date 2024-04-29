@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function App() {
-  let [toggleEnglish, setToggleEnglish] = useState(true)
+  let [toggleEnglish, setToggleEnglish] = useState(false)
   let [currSection, setCurrentSection] = useState(0)
   let [currPhrase, setCurrPhrase] = useState(0)
   let sections = allData
@@ -32,9 +32,10 @@ export default function App() {
 
   return (
 
-    <div className="w-full ml-[310px] mt-[60px]  relative flex dark:bg-[#222] px-0 h-[calc(100%-60px)] ">
 
-      <div className={(toggleModal ? '' : 'hidden') + ' w-[calc(100%-620px)] h-[calc(100%-60px)] bg-white fixed flex-col justify-center z-[1]'}>
+    <div className={(toggleModal ? 'overflow-hidden' : '') + " w-full ml-[310px] mt-[60px]  relative flex dark:bg-[#222] px-0 h-[calc(100%-60px)]"}>
+
+      <div className={(toggleModal ? '' : 'opacity-0 invisible') + ' visible w-[calc(100%-620px)] h-[calc(100%-60px)] bg-white fixed flex-col justify-center z-[1]'}>
         <div className="w-full flex py-[50px] items-center justify-center h-full border-b-[1px]">
           <div className="h-full w-full p-[40px] bg-[#fdfdfd]">
             <div className="flex relative flex-col hover:text-[#428777] border font-light bg-white rounded-xl w-full h-full p-10 justify-center items-center text-[60px] text-center">
@@ -65,11 +66,16 @@ export default function App() {
       <div className=' w-[calc(100%-620px)]  fixed flex flex-col bottom-0 justify-end bg-[white] h-min z-[1]'>
         <div className="w-full mb-0 py-4 flex items-center justify-between border-t-[1px] px-10">
           <div className='text-sm flex flex-row gap-3'>
-            <Image src="/play_btn_cr.svg" width={30} height={30} alt="REAN KHMER" className="cursor-pointer" />
-            <div>
-              <button onClick={() => { setToggleEnglish(!toggleEnglish) }} className={(toggleEnglish ? 'bg-[#64B5A2] text-white border-white ' : '') + " border px-2 py-1 rounded inline cursor-pointer"}>
+            <Image src="/play_btn_cr.svg" width={27} height={27} alt="REAN KHMER" className="cursor-pointer" />
+            {/* <button onClick={() => { setToggleEnglish(!toggleEnglish) }} className={(toggleEnglish ? 'bg-[#64B5A2] text-white border-white ' : '') + " border px-2 py-1 rounded inline cursor-pointer"}>
                 Show Hint
-              </button>
+              </button> */}
+            <div className='flex items-center'>
+              <label className="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" onClick={() => setToggleEnglish(!toggleEnglish)} className="sr-only peer" />
+                <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-[#64B5A2] rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#64B5A2]"></div>
+                <span className="ms-3 text-sm font-normal text-gray-900 dark:text-gray-300">Show Hint</span>
+              </label>
             </div>
           </div>
           <div className='text-sm flex gap-3 items-center'>
@@ -91,7 +97,7 @@ export default function App() {
                 <div className="mt-5 px-10 grid grid-cols-1 w-full text-left mb-10">
                   {section.phrases.map((phrase, phraseIndex) => (
                     <div key={phraseIndex} className="text-[35px] w-full flex-col justify-center">
-                      <div onClick={() => setToggleModal(true)} className="relative w-full hover:text-[#428777] text-left mb-5">
+                      <div onClick={() => { setToggleModal(true); setCurrentSection(sectionIndex); setCurrPhrase(phraseIndex) }} className="relative w-full hover:text-[#428777] text-left mb-5">
                         <span className="cursor-pointer">{phrase.khmer}</span>
                       </div>
                     </div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="462px" height="361px" viewBox="0 0 462 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>sound</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sound" transform="translate(17.000000, 16.666667)" stroke="#64B5A2" stroke-width="33.3333333">
+            <polygon id="Path" fill="#64B5A2" stroke-linejoin="round" points="222.593333 0.126666667 108.233333 99.04 0 99.04 0 226.326667 106.593333 226.326667 222.593333 326.666667"></polygon>
+            <path d="M280,92.3333333 C308.425359,135.64122 308.425359,191.692113 280,235 M327.333333,45 C379.344836,115.562387 379.344836,211.770947 327.333333,282.333333 M370.666667,1.66666667 C446.683196,96.2904798 446.683196,231.042854 370.666667,325.666667" id="Shape" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

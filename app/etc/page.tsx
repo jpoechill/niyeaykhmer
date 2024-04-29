@@ -3,6 +3,7 @@ import { createClient } from '@/utils/supabase/server'
 import GetCreds from "@/app/getcreds/getCreds"
 import LeftSideBar from "@/app/components/LeftSideBar";
 import RightSideBar from "@/app/components/RightSideBar"
+import Link from "next/link";
 
 export default async function Account() {
   const supabase = createClient()
@@ -25,86 +26,113 @@ export default async function Account() {
 
         <LeftSideBar></LeftSideBar>
 
-        <div className="group-hover/all:opacity-100 w-full pl-[300px] h-full top-[60px]">
-          <div className="mt-[60px] h-full w-full p-8">
-            <div className="text-[#2c3e50] px-10 pb-10 text-[14px]">
-              {/* <span className="text-xs italic">
-                Intermediate
-              </span> */}
 
-              {/* <div className="text-[1.6rem] font-semibold mb-5">
-                Info
-              </div> */}
-              <Image src="/avatars/group_02.png" width={600} height={300} alt="REAN KHMER" className="inline w-full mr-3 pb-1" />
+        <div className="w-full ml-[310px] mt-[60px]  relative flex-col dark:bg-[#222] px-0 h-[calc(100%-60px)] ">
 
-              <div id="vowels" className="text-[1.25rem] pb-[.3rem] mt-4 font-semibold border-b-[1px] mb-3 border-[#eaecef]">
+          <div className='w-[calc(100%-620px)] fixed flex flex-col pt-[60px] top-0 justify-end bg-[white] h-min z-[1]'>
+            <div className="w-full py-4 flex items-center justify-between border-b-[1px] px-10">
+              <div className="text-[1.25rem] font-semibold">
                 About
               </div>
+            </div>
+          </div>
+
+          <div className={'w-full pt-[16px]'}>
+            <div className='p-0 mt-[10px] w-full z-0'>
               <div>
-                A Khmer language trainer and quick reference site.
-              </div>
-              <div id="vowels" className="mt-5 text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] mb-3 border-[#eaecef]">
-                Support
-              </div>
-              <div>
-                Let us know that we should keep working on this!
-              </div>
-
-              <div id="vowels" className="mt-5 text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] mb-3 border-[#eaecef]">
-                Resources
-              </div>
-              <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eveniet, aliquid esse provident maiores quasi, harum consequatur laborum similique distinctio saepe itaque voluptatibus qui commodi beatae voluptate suscipit. Adipisci omnis, ipsum, culpa aliquid, et minus beatae deleniti voluptate quo corrupti nostrum. Quo cupiditate consequuntur eos odit accusamus tenetur! Asperiores illo molestias vero maiores adipisci ullam ipsum veniam similique nihil laborum!
-              </div>
-
-
-              {/* <div id="vowels" className="mt-5 text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] mb-3 border-[#eaecef]">
-                Resources
-              </div>
-              <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut laudantium ullam eius, provident nostrum earum obcaecati minus saepe quis commodi ipsum eos eveniet odio, quisquam rerum sed aliquid ipsam dolorum non, voluptatem incidunt vel sint autem. Fugiat aperiam possimus sequi?
-              </div> */}
-
-              <div id="vowels" className="mt-5 text-[1.25rem] pb-[.3rem] font-semibold border-b-[1px] mb-3 border-[#eaecef]">
-                Contact
-              </div>
-              <div>
-                Have questions, suggestions, or feedback? We&apos;d love to hear from you!
-                <br /><br />
-                {/* Reach out to us via email or social media. */}
-                {/* <br /><br /> */}
-                {/* Email: YourEmail@example.com <br />
-                Social Media: Follow us on Facebook and Twitter for updates and language learning tips. <br />
-                We're here to assist you on your language learning journey. Don't hesitate to get in touch! */}
-              </div>
-
-              {/* Start Side Bar - RIGHT */}
-
-              <div className="top-[60px] hidden lg:block w-[300px] text-[#2c3e50] text-[14px] right-0 fixed pt-5 p-8 z-1 left-flex h-full bottom-0 border-l-[1px] ">
-                <RightSideBar />
-              </div>
-
-
-              {/* <div className="text-xs font-extralight text-right block pt-12 pb-3">
-                Last updated: 01/01/24
-              </div>
-              <div >
-                <hr />
-              </div>
-              <div className="flex justify-between my-3 pt-3">
-                <div>
-                  ← Previous
+                <div id="vowels" className="px-10 text-left text-[1.25rem] pb-[.3rem] pt-0 font-semibold border-[#eaecef]">
+                  &nbsp;
                 </div>
-                <div>
-                  Next →
+                <div className="mt-5 px-10 grid grid-cols-1 w-full text-left mb-10">
+                  A Khmer language trainer and quick reference site. 👋👋 <br /><br />
+                  Designed and built by @jpoechill.
                 </div>
-              </div> */}
+              </div>
+            </div>
+          </div>
+
+
+          <div className={'w-full'}>
+            <div className='p-0 w-full z-0'>
+              <div>
+                <div id="vowels" className="border-b-[1px] px-10 text-left text-[1.25rem] pb-[.3rem] pt-0 font-semibold border-[#eaecef]">
+                  Support
+                </div>
+                <div className="mt-5 px-10 grid grid-cols-1 w-full text-left mb-10">
+                  Let us know that we should keep working on this!
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className={'w-full'}>
+            <div className='p-0 w-full z-0'>
+              <div>
+                <div id="vowels" className="border-b-[1px] px-10 text-left text-[1.25rem] pb-[.3rem] pt-0 font-semibold border-[#eaecef]">
+                  Resources
+                </div>
+                <div className="mt-5 px-10 grid grid-cols-1 w-full text-left mb-10">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae labore pariatur sint.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className={'w-full'}>
+            <div className='p-0 w-full z-0'>
+              <div>
+                <div id="vowels" className="border-b-[1px] px-10 text-left text-[1.25rem] pb-[.3rem] pt-0 font-semibold border-[#eaecef]">
+                  Contact
+                </div>
+                <div className="mt-5 px-10 grid grid-cols-1 w-full text-left mb-10">
+                  Have questions, suggestions, or feedback? We&apos;d love to hear from you!
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <div className={"opacity-100 bg-white border-l-[1px] dark:bg-[#222] dark:text-white transition-opacity ease-in-out text-left top-[60px] fixed w-[310px] lg:block right-0 z-1 pl-9 pt-5 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
+          <div>
+            <div className="relative">
+              <div className="-left-3 font-semibold mt-1 mb-1">
+                Info
+              </div>
+            </div>
+            <div className="border-l-2 ml-2 pl-3 flex flex-col gap-1">
+              <div className="hover:text-[#428777] cursor-pointer">
+                <Link href="/etc#special">
+                  About
+                </Link>
+              </div>
+              <div className="hover:text-[#428777] cursor-pointer">
+                <Link href="/etc#special">
+                  Support
+                </Link>
+              </div>
+              <div className="hover:text-[#428777] cursor-pointer">
+                <Link href="/etc#special">
+                  Resources
+                </Link>
+              </div>
+              <div className="hover:text-[#428777] cursor-pointer">
+                <Link href="/etc#special">
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </div>
+
       </div >
-
-
     </main >
   );
 }
+
+

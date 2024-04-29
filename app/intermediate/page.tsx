@@ -28,7 +28,7 @@ export default async function Account() {
         <LeftSideBar></LeftSideBar>
         <Body />
 
-        <div className={"opacity-100 bg-white border-l-[1px] dark:bg-[#222] dark:text-white transition-opacity ease-in-out text-left top-[60px] fixed w-[310px] lg:block right-0 z-1 pl-9 pt-5 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
+        <div className={"resize opacity-100 bg-white border-l-[1px] dark:bg-[#222] dark:text-white transition-opacity ease-in-out text-left top-[60px] fixed w-[310px] lg:block right-0 z-1 pl-9 pt-5 p-8 h-full text-[#2c3e50] text-[14px] bottom-0"}>
           <div>
             <div className="relative">
               <div className="-left-3 font-semibold mt-1 mb-1">
